@@ -1,0 +1,7 @@
+title: Fundamental Computing Projects
+description: Student project listing maintained by the Fundamental Computing team.
+baseurl: ""
+url: ""
+markdown: kramdown
+exclude:
+  - bundle

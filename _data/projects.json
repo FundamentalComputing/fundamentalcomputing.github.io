@@ -1,0 +1,295 @@
+[
+    {
+        "title": "A survey of graph parameters and their comparison",
+        "supervisor": {
+            "name": "Ivan Bliznets",
+            "email": "...@rug.nl"
+        },
+        "short_description": "...",
+        "long_description": "
+Graphs are the backbone of computer science, and they are everywhere! They are used to model a wide variety of real-world problems, including social networks, transportation networks, and communication networks. Graphs have many parameters that describe their complexity and structure, and these parameters can be used to gain insights into the underlying problem. The simplest such parameters are the number of vertices and the number of edges, but there are more involved parameters like treewidth. This parameter describes how significantly a graph is different from a tree (see the <a href=\"https://en.wikipedia.org/wiki/Treewidth\" target=\"_blank\">Wikipedia page for Treewidth</a> for more details). There are many other parameters like pathwidth, cliquewidth, twinwidth, vertex cover, neighborhood diversity, and so on.  All these parameters can be used to gain a deeper understanding of how hard a particular problem is on a given graph.
+
+
+The goal of the proposed project is to survey and study relations between different parameters describing graphs. For example, it is well known that the pathwidth parameter is never smaller than a treewidth. It is expected that this kind of relations will be surveyed or discovered in the project. Also you will be exploring different graph parameters from the viewpoint of algorithms and discrete mathematics. The project is an exciting opportunity to dive deep into the world of graphs and algorithms.
+
+
+If you want to know more about treewidth you can watch <a href=\"https://www.youtube.com/watch?v=kEnDGTwSDXY\" target=\"_blank\">this video</a> (understanding all material in the video is NOT necessary)
+
+This project is intended for students interested in graphs.",
+        "tags": ["algorithms", "graphs"],
+        "available": 2
+    },
+
+    {
+        "title": "NP-complete number theoretical problems",
+        "supervisor": {
+            "name": "Ivan Bliznets",
+            "email": "...@rug.nl"
+        },
+        "short_description": "...",
+        "long_description": "
+Subset sum, knapsack, and partition are well-known problems in computer science. These problems involve a list of numbers as input. If the input contains only integer numbers, these problems are weakly NP-complete and admit pseudo polynomial algorithms. However, if the input contains rational numbers given by the denominator and numerator, these problems become strongly NP-complete.
+
+
+The goal of this project is to investigate whether other “number theoretical” NP-complete problems have similar behavior. One such problem is the problem of covering the input array by the smallest number of arithmetic progressions. It is known that this problem is weakly NP-complete if the input contains only integer numbers. The proof of this result and other details can be found in [this paper](https://www.sciencedirect.com/science/article/abs/pii/002001909090013N).
+
+
+For additional information on this topic see [this paper](https://arxiv.org/abs/1802.09465).
+
+
+This project is intended for students interested in algorithms, NP-completeness and introductory number theory.
+",
+        "tags": ["algorithms", "complexity"],
+        "available": 1
+    },
+
+    {
+        "title": "Interplay of number theory and fixed-parameter tractable algorithms",
+        "supervisor": {
+            "name": "Ivan Bliznets",
+            "email": "...@rug.nl"
+        },
+        "short_description": "...",
+        "long_description": "
+Parameterized complexity is a promising approach to tackle computationally hard problems. So far, fixed-parameter tractable algorithms have been designed mainly for graph problems. The goal of this project is to study the possibility of the application of fixed-parameter tractable machinery to the construction of efficient algorithms for computationally hard problems from basic number theory.
+
+
+The project starts with a study of basic notions and definitions of fixed-parameter tractable algorithms. The final goal of the project is to survey  NP-complete problems involving integer numbers that might have small parameters (some characteristics) in real-world instances. For example, in the CAP problem, an input consists of a set of integer numbers, and the goal is to cover all these numbers using the smallest number of arithmetic progressions that do not include other integers. It is natural to assume that, in real life, we are interested in answers only if the number of arithmetic progressions is small. Under such parameterization, CAP admits an efficient algorithm (the problem has a fixed-parameter tractable algorithm), even though the general case of CAP is NP-complete.
+
+
+During the project, your goal is to identify problems from basic number theory that are interesting from the point of view of fixed-parameter tractable algorithms.
+
+Literature:
+
+  - Basics of parameterized algorithms: Chapters 1 and 3 in the book \"Parameterized Algorithms\", available [here](https://www.mimuw.edu.pl/~malcin/book/parameterized-algorithms.pdf)
+
+  - [List of NP-complete problems](https://en.wikipedia.org/wiki/List_of_NP-complete_problems)
+",
+        "tags": ["algorithms", "complexity"],
+        "available": 2
+    },
+
+    {
+        "title": "The Partial Minimum Satisfiability problem",
+        "supervisor": {
+            "name": "Ivan Bliznets",
+            "email": "...@rug.nl"
+        },
+        "short_description": "...",
+        "long_description": "
+The Partial Minimum Satisfiability problem involves a CNF formula F, where some of the clauses are marked as hard clauses. The goal is to find a satisfying assignment that satisfies all hard clauses and the smallest number of other clauses. The length of the formula is defined as the number of literals in the formula. The objective of this project is to construct an algorithm for the Partial Minimum Satisfiability problem, with the running time measured in terms of the length of the formula or in terms of the overall number of variables and clauses. The algorithm will most likely be a branch-and-bound algorithm. You can find details about branching algorithms in Chapter 2 of the book [Exact Exponential Algorithms](https://folk.uib.no/nmiff/BookEA/BookEA.pdf).
+
+
+This project will introduce you to exact exponential algorithms and basic techniques for designing such algorithms. You will also have the opportunity to construct your own algorithm for the Partial Minimum Satisfiability problem. Good luck!
+
+
+Literature:
+
+- [Exact Exponential Algorithms](https://folk.uib.no/nmiff/BookEA/BookEA.pdf)
+
+- [Description of the Partial Minimum Satisfiability problem and its applications.](https://www.sciencedirect.com/science/article/pii/S0004370212000616)
+",
+        "tags": ["algorithms"],
+        "available": 2
+    },
+
+    {
+        "title": "Minimal Connected Tropical Sets",
+        "supervisor": {
+            "name": "Ivan Bliznets",
+            "email": "...@rug.nl"
+        },
+        "short_description": "...",
+        "long_description": "
+Suppose the vertices of a graph G are colored. We define a subset of vertices as a connected tropical set if it generates a connected graph that contains vertices of all colors from the original graph. A subset of vertices is a Minimal Connected Tropical Set if it is a Connected Tropical Set and it does not contain a smaller set that is also a Connected Tropical Set.
+
+
+A graph is called an interval graph if we can assign intervals on the line to all vertices such that two vertices are adjacent if and only if corresponding intervals intersect.
+
+
+The objective of this project is to investigate the number of minimal connected tropical sets in interval graphs. We aim to find the exact values of the number of minimal connected tropical sets in small interval graphs using computational resources. We also try to generalize our findings to interval graphs of arbitrary size by providing lower bounds or upper bounds on their value.
+
+
+Below you can find literature that is relevant to this project:
+
+-    [Enumerating Minimal Tropical Connected Set](https://link.springer.com/chapter/10.1007/978-3-319-51963-0_17)
+
+-    [Enumeration of Minimal Tropical Connected Sets](https://link.springer.com/chapter/10.1007/978-3-031-30448-4_10)
+",
+        "tags": ["algorithms", "graphs"],
+        "available": 1
+    },
+
+    {
+        "title": "Theory and Practice of Bidirectional Typechecking",
+        "supervisor": {
+            "name": "Dan Frumin",
+            "email": "...@rug.nl"
+        },
+        "short_description": "...",
+        "long_description": "
+This project is about implementing a type system for a programming language. A type system determines which programs in a programming language are valid, and which ones are not.  A type system for example can reject a program that adds a number and a string together, thus catching a type error. And more advanced type system can catch more errors. The process of enforcing such a typing discipline is called type checking: given a program, annotated with types, a compiler checks whether to accept the program or reject it.
+
+
+The natural question for implementers of compilers is then how to implement a type system, without requiring too much input from the user. That is, given a partially annotated program, can we infer the types? This is referred to as type inference.
+
+
+One class of algorithms for implementing type systems are based on bidirectional type checking, which combines type checking and type inference into a straightforward algorithm.
+
+
+The goal of this project is to study bidirectional type checking and implementing one of the algorithms in your favorite programming language.
+
+
+If you enjoyed the courses on functional programming or the elective course on compiler construction, then this project might be for you!
+",
+        "tags": ["type systems", "programming languages"],
+        "available": 1
+    },
+
+    {
+        "title": "Formally verified functional programs in Rocq",
+        "supervisor": {
+            "name": "Dan Frumin",
+            "email": "...@rug.nl"
+        },
+        "short_description": "...",
+        "long_description": "
+       The aim of this project is to build a formally verified correct software, and to familiarize yourself with the Coq system. Coq is a proof assistant and a programming language, which allows the user not only to write and execute functional programs, but also to prove properties about them.
+
+
+In the first part of this programming project the student will first familiarize themselves with the basics of Coq. In the second part, the student will pick an algorithm or a data structure – for example, a queue, a look-up table, a binary tree, etc – and they will implement and verify it.
+
+
+Required skills: Knowledge of functional programming and mathematical induction
+
+
+Here are some more links that contextualize the project.
+",
+        "tags": ["logic", "functional programming", "verification"],
+        "available": 2
+    },
+
+    {
+        "title": "From Gossip Protocols to Session Protocols (and Back)",
+        "supervisor": {
+            "name": "Jorge Pérez",
+            "email": "...@rug.nl"
+        },
+        "short_description": "",
+        "long_description": "
+The notion of protocol is everywhere in Computer Science. A well-known example are the security protocols that ensure that distributed communications can take place securely. 
+
+
+This project concerns two other classes of protocols that are also relevant in practice: 
+
+
+    The first class of protocols, which we will call session protocols, describe a series of communication actions between different agents, as in an online transaction. The goal with session protocols is to ensure that agents complete their respective protocol without communication errors or getting stuck. 
+
+
+    The second class of protocols, which we will call gossip protocols, are similar but serve a different purpose: the goal is to disseminate a secret message, in such a way that all protocol participants eventually become aware of this private information. 
+
+
+Session and gossip protocols have been widely investigated in the literature, although separately and with different methods and techniques. On the one hand, gossip protocols have been studied using (dynamic) epistemic logics, and their associated model checking techniques for verification. On the other hand, session protocols have been studied using process calculi and type systems, some of which are based on logics. 
+
+
+The goal of this project is to survey existing approaches and explore whether the techniques used for analyzing session protocols can be used to analyze gossip protocols (and vice versa).
+
+
+See <https://www.jperez.nl/teaching/projects> for general orientation and introductory papers.
+
+
+For gossip protocols, the following course by Hans van Ditmarsch and Malvin Gattinger can be useful:
+    <https://malv.in/2022/gossip/>
+",
+        "tags": ["type systems", "concurrency"],
+        "available": 2
+    },
+
+    {
+        "title": "A General Language for Concurrency: The Psi-Calculus",
+        "supervisor": {
+            "name": "Jorge Pérez",
+            "email": "...@rug.nl"
+        },
+        "short_description": "..",
+        "long_description": "
+ Process calculi are small formalisms intended as programming models; they express concurrency in the form of multiple processes that exchange messages between them and execute simultaneously. There exist multiple process calculi, with different features and expressivity. The psi-calculus, proposed by Bengtson et al, is intended to be a flexible framework, designed in such a way that it generalizes several other process calculi. Indeed, existing process calculi are as specific instances of the psi-calculus.
+
+
+Just as mainstream programming languages use types (and type systems) to rule out errors derived from nonsensical program fragments, we can combine process calculi with type systems: this is useful to rule out processes containing incorrect or nonsensical behaviors (such as deadlocks). We then talk of typed process calculi, which are typically less expressive than untyped process calculi precisely because incorrect processes cannot be specified in them. 
+
+
+This project concerns the psi-calculus and type systems, and has two goals. The first goal is to survey the state of the art on the combination of the psi-calculus with type systems. The work of Huttel et al (referenced below) is a good starting point. The second goal is to explore possible extensions of existing type systems for the psi-calculus, considering important correctness properties such as deadlock-freedom. 
+
+
+See <https://www.jperez.nl/teaching/projects> for general orientation and introductory papers.
+
+
+See also the work by Huttel et al:
+
+- [Binary Session Types for Psi-Calculi](https://link.springer.com/chapter/10.1007/978-3-319-47958-3_6)
+
+- [A Generic Type System for Higher-Order Psi-Calculus](https://arxiv.org/pdf/2209.02354v1)
+",
+        "tags": ["concurrency", "programming languages", "type systems"],
+        "available": 2
+    },
+
+    {
+        "title": "Well-quasi-orderings in computer science and their upper bounding",
+        "supervisor": {
+            "name": "",
+            "email": "...@rug.nl"
+        },
+        "short_description": "...",
+        "long_description": "Let N be the set of natural numbers {0, 1, 2, .. }. Consider the binary relation <= on N^2 = { (x,y) | x ∈ N and y ∈ N } defined as:
+
+
+(a1, b1) <= (a2, b2) iff a1 <= a2 and b1 <= b2
+
+
+For example, (2, 2) <= (3, 3) but (2,2) and (3, 1) are incomparable under <=. It is easy to see that <= is reflexive and transitive i.e., it is a quasi-order.
+
+
+A bad sequence is a sequence a0, a1, a2, .. of elements from N^2 with the property that there is no increasing pair i.e. there is no i,j with i < j such that ai <= aj. An example of a bad sequence is (2,2), (3,1), (1,1), (0,1). However, (2,2), (1,3),(3,2) is not a bad sequence since it contains an increasing pair (2,2) <= (3,2). 
+
+
+It is easy to see that a bad sequence on N is finite since it would have to be a strictly descending sequence (e.g. 7, 5, 3, 2, 1, 0). The existence of incomparable elements in N^2 under <= makes the situation more interesting. Nevertheless:
+
+
+LEMMA. Every bad sequence on N^2 with respect to <= is finite. 
+
+(Can you prove it? What is an example of a set and ordering where infinite bad sequences exist?)
+
+
+A quasi-ordering <= such that every bad sequence is finite is called a well-quasi-ordering (wqo).
+
+
+What is the maximum length of a bad sequence on N^2? It does not exist, since arbitrarily large jumps can be made e.g., (2,2), (1, 100), (1, 99), .. and hence arbitrarily long bad sequences can be found. However, if we restrict the size of a jump, e.g. \\|a_{I+1}\\| <= 2.\\|a_i\\| where \\|a\\| is the maximum value over the coordinates then it can be shown that a maximum length for bad sequences exists as a function of the starting element (can you prove it? can you compute its length under this doubling control?).
+
+
+RELATIONSHIP TO TCS: Suppose you want to show that an algorithm terminates. In many cases, the successive configurations of the algorithm can be represented as a bad sequence of some wqo. In such cases, the finiteness of the bad sequence guarantees termination, and the length of the bad sequence provides an upper bound.
+
+
+In 2011, Figueira et al. gave an elementary and self-contained proof of sharp upper bounds for controlled bad sequences over N^k. The aim of this project is to survey the application of wqos in theoretical computer science and to survey their upper bound argument.
+
+
+This topic is suited to a student who is interested in the mathematical aspects of computer science. The starting reference is the following.
+
+Diego Figueira, Santiago Figueira, Sylvain Schmitz, Philippe Schnoebelen: Ackermannian and Primitive-Recursive Bounds with Dickson's Lemma. ACM/IEEE Symposium on Logic in Computer Science LICS 2011: 269-278",
+        "tags": ["logic", "complexity"],
+        "available": 1
+    },
+
+    {
+        "title": "Title",
+        "supervisor": {
+            "name": "Supervisor",
+            "email": "...@rug.nl"
+        },
+        "short_description": "...",
+        "long_description": "...",
+        "tags": ["logic"],
+        "available": 2
+    },
+]

@@ -1,0 +1,29 @@
+[
+    {
+        "title": " Verified Functional Graph Algorithms using The Rocq Prover",
+        "supervisor": {
+            "name": "Dan Frumin",
+            "email": "...@rug.nl"
+        },
+        "completed_by": "Leopold Frieberger",
+        "year": 2025,
+        "type": "BSc",
+        "report_url": "https://fse.studenttheses.ub.rug.nl/36509/1/Bachelors-Thesis-Leopold-Frieberger-Repository.pdf"
+    },
+
+    {
+        "title": "Interplay of Number Theory and Fixed-Parameter Tractable Algorithms ",
+        "completed_by": "Arnaud van Hees",
+        "year": 2025,
+        "type": "BSc",
+        "report_url": "https://fse.studenttheses.ub.rug.nl/35856/1/bCS2025VanHeesA.pdf"
+    },
+    
+    {
+        "title": "Skeletal semantics for message-passing concurrency - from actors to channels and back",
+        "completed_by": "Miguel Bartelsman",
+        "type": "BSc",
+        "year": 2022,
+        "report_url": "https://fse.studenttheses.ub.rug.nl/28537/1/bCS_2022_BartelsmanMejiaMiguel.pdf"
+    }
+]

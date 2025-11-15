@@ -1,0 +1,46 @@
+---
+title: Past Projects
+permalink: /student-projects/past-projects.html
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ page.title }}</title>
+    <meta name="description" content="{{ page.description }}" />
+    <link rel="stylesheet" href="{{ '/assets/css/projects.css' | relative_url }}" />
+  </head>
+  <body>
+    <div class="page-wrapper">
+      {% capture header_extra %}
+        <p>Go back to the <a class="inline-link" href="/">Fundamental Computing home page</a></p>
+      {% endcapture %}
+      {% include site-header.html extra=header_extra %}
+      <main>
+        <p>Below are the recently completed student projects wihtin our group:</p>
+
+        {% assign completed_projects = site.data['projects-finished'] %}
+        {% if completed_projects and completed_projects.size > 0 %}
+          <ul class="past-projects">
+            {% for project in completed_projects %}
+              <li>
+                <p class="past-project__title">
+                  <a href="{{ project.report_url }}" target="_blank" rel="noopener">
+                    {{ project.title }}
+                  </a>
+                </p>
+                <p class="past-project__meta">
+                  {{ project.completed_by }}, {{ project.type }} {{ project.year }}
+                </p>
+              </li>
+            {% endfor %}
+          </ul>
+        {% else %}
+          <p>No past projects recorded yet.</p>
+        {% endif %}
+      </main>
+      {% include site-footer.html %}
+    </div>
+  </body>
+</html>

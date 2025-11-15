@@ -1,0 +1,80 @@
+{% assign projects = include.projects | default: site.data.projects %}
+{% if projects and projects.size > 0 %}
+  <ul class="project-grid">
+    {% for project in projects %}
+      {% assign project_id = project.title | slugify | append: '-' | append: forloop.index0 %}
+      {% assign normalized_tags = '' %}
+      {% if project.tags %}
+        {% assign normalized_tags = project.tags | join: ',' | downcase %}
+      {% endif %}
+      {% assign availability_value = project.available %}
+      {% assign is_unavailable = false %}
+      {% if availability_value == false or availability_value == 0 or availability_value == nil %}
+        {% assign is_unavailable = true %}
+      {% endif %}
+      <li class="project-card{% if is_unavailable %} is-unavailable{% endif %}" id="{{ project_id }}" data-tags="{{ normalized_tags }}"{% if is_unavailable %} aria-disabled="true"{% endif %}>
+        <div class="project-card__header">
+          <h2>{{ project.title }}</h2>
+          {% if project.supervisor %}
+            <p class="project-card__supervisor">
+              <strong>Supervisor:</strong>
+              {{ project.supervisor.name }}
+              {% if project.supervisor.email %}
+                · <a href="mailto:{{ project.supervisor.email }}">{{ project.supervisor.email }}</a>
+              {% endif %}
+            </p>
+          {% endif %}
+        </div>
+        {% if project.short_description %}
+          <p class="project-card__short">{{ project.short_description }}</p>
+        {% endif %}
+        {% if project.long_description %}
+          {% assign details_id = project_id | append: '-details' %}
+          <div class="project-card__details" data-project-details data-project-id="{{ project_id }}">
+            <button
+              type="button"
+              class="details-toggle"
+              aria-expanded="false"
+              aria-controls="{{ details_id }}"
+              data-label-collapsed="More details"
+              data-label-expanded="Hide details"
+            >
+              More details
+            </button>
+            {% capture project_long_description %}
+              {{ project.long_description | markdownify }}
+            {% endcapture %}
+            <div id="{{ details_id }}" class="project-card__long" hidden>
+              {{ project_long_description | replace: '<a href="', '<a target="_blank" rel="noopener noreferrer" href="' }}
+            </div>
+          </div>
+        {% endif %}
+        <div class="project-card__availability">
+          {% if is_unavailable %}
+            <span class="availability availability--closed">Currently unavailable</span>
+          {% else %}
+            {% assign spot_word = 'spot' %}
+            {% if availability_value > 1 %}
+              {% assign spot_word = 'spots' %}
+            {% endif %}
+            <span class="availability availability--open">{{ availability_value }} {{ spot_word }} available</span>
+          {% endif %}
+        </div>
+        {% if project.tags %}
+          <ul class="tag-list" aria-label="Tags for {{ project.title }}">
+            {% for tag in project.tags %}
+              {% assign normalized_tag = tag | downcase %}
+              <li>
+                <button type="button" class="tag-chip" data-tag="{{ normalized_tag }}" data-filter-control data-scroll-to-filter="true">
+                  {{ tag }}
+                </button>
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <p>No projects are listed yet. Check back soon!</p>
+{% endif %}

@@ -1,0 +1,24 @@
+<header class="site-header">
+  <div class="site-header__inner">
+    <div class="site-header__content">
+      <h1>{{ page.title }}</h1>
+      {% if include.extra %}
+        <div class="site-header__extra">
+          {{ include.extra }}
+        </div>
+      {% endif %}
+    </div>
+    <input type="checkbox" id="nav-toggle" class="site-header__toggle" />
+    <label for="nav-toggle" class="site-header__menu-toggle">
+      <span class="sr-only">Toggle navigation</span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <nav id="primary-nav" class="site-header__nav" aria-label="Primary">
+      <a href="/" class="site-nav__link">Group webpage</a>
+      <a href="{{ '/student-projects/' | relative_url }}" class="site-nav__link{% if page.url == '/student-projects/' %} is-active{% endif %}">Available projects</a>
+      <a href="{{ '/student-projects/past-projects.html' | relative_url }}" class="site-nav__link{% if page.url == '/student-projects/past-projects.html' %} is-active{% endif %}">Past projects</a>
+    </nav>
+  </div>
+</header>

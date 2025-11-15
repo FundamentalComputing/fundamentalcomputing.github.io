@@ -1,0 +1,60 @@
+---
+title: Student Projects
+permalink: /student-projects/
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ page.title }}</title>
+    <meta name="description" content="{{ page.description }}" />
+    <link rel="stylesheet" href="{{ '/assets/css/projects.css' | relative_url }}" />
+    <script src="{{ '/assets/js/tag-filter.js' | relative_url }}" defer></script>
+
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script>
+  </head>
+  <body>
+    <div class="page-wrapper">
+      {% capture header_extra %}
+        <p>Go back to the <a class="inline-link" href="/">Fundamental Computing home page</a></p>
+      {% endcapture %}
+      {% include site-header.html extra=header_extra %}
+      <main aria-live="polite">
+        <p>
+          Would you like to do a project with the Fundamental Computing group?
+        </p>
+        <p>Insert more information here..</p>
+        
+        <p class="muted">Narrow the projects down using the tags below:</p>
+        {% assign flattened_tags = site.data.projects | map: 'tags' | compact | join: ',' | split: ',' %}
+        {% assign normalized_tags = '' %}
+        {% for tag in flattened_tags %}
+          {% assign trimmed_tag = tag | strip %}
+          {% if trimmed_tag != '' %}
+            {% assign lowered = trimmed_tag | downcase %}
+            {% if normalized_tags == '' %}
+              {% assign normalized_tags = lowered %}
+            {% else %}
+              {% assign normalized_tags = normalized_tags | append: ',' | append: lowered %}
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+        {% assign tag_list = normalized_tags | split: ',' | uniq | sort %}
+        {% if tag_list and tag_list != empty %}
+        <div class="tag-filter" data-tag-filter>
+          <button type="button" class="tag-filter__btn is-active" data-tag="all" data-filter-control>All</button>
+            {% for tag in tag_list %}
+              {% if tag != '' %}
+                <button type="button" class="tag-filter__btn" data-tag="{{ tag }}" data-filter-control>{{ tag }}</button>
+              {% endif %}
+          {% endfor %}
+        </div>
+        {% endif %}
+        
+        {% include project-list.html %}
+      </main>
+      {% include site-footer.html %}
+    </div>
+  </body>
+</html>
