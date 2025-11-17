@@ -3,9 +3,9 @@
         "title": "A survey of graph parameters and their comparison",
         "supervisor": {
             "name": "Ivan Bliznets",
-            "email": "...@rug.nl"
+            "email": "i.bliznets@rug.nl"
         },
-        "short_description": "...",
+        "short_description": "Explore the intricate world of graph parameters and their relationships, from treewidth to vertex cover, to gain deeper insights into algorithmic complexity.",
         "long_description": "
 Graphs are the backbone of computer science, and they are everywhere! They are used to model a wide variety of real-world problems, including social networks, transportation networks, and communication networks. Graphs have many parameters that describe their complexity and structure, and these parameters can be used to gain insights into the underlying problem. The simplest such parameters are the number of vertices and the number of edges, but there are more involved parameters like treewidth. This parameter describes how significantly a graph is different from a tree (see the <a href=\"https://en.wikipedia.org/wiki/Treewidth\" target=\"_blank\">Wikipedia page for Treewidth</a> for more details). There are many other parameters like pathwidth, cliquewidth, twinwidth, vertex cover, neighborhood diversity, and so on.  All these parameters can be used to gain a deeper understanding of how hard a particular problem is on a given graph.
 
@@ -24,9 +24,9 @@ This project is intended for students interested in graphs.",
         "title": "NP-complete number theoretical problems",
         "supervisor": {
             "name": "Ivan Bliznets",
-            "email": "...@rug.nl"
+            "email": "i.bliznets@rug.nl"
         },
-        "short_description": "...",
+        "short_description": "Discover if problems involving number theoretical aspects, like covering arrays with arithmetic progressions, exhibit similar complexity shifts when transitioning from integer to rational inputs.",
         "long_description": "
 Subset sum, knapsack, and partition are well-known problems in computer science. These problems involve a list of numbers as input. If the input contains only integer numbers, these problems are weakly NP-complete and admit pseudo polynomial algorithms. However, if the input contains rational numbers given by the denominator and numerator, these problems become strongly NP-complete.
 
@@ -47,9 +47,9 @@ This project is intended for students interested in algorithms, NP-completeness 
         "title": "Interplay of number theory and fixed-parameter tractable algorithms",
         "supervisor": {
             "name": "Ivan Bliznets",
-            "email": "...@rug.nl"
+            "email": "i.bliznets@rug.nl"
         },
-        "short_description": "...",
+        "short_description": "Explore the potential of parameterized complexity to design efficient algorithms for computationally hard number theory problems, focusing on identifying problems with real-world parameters that allow for efficient solutions.",
         "long_description": "
 Parameterized complexity is a promising approach to tackle computationally hard problems. So far, fixed-parameter tractable algorithms have been designed mainly for graph problems. The goal of this project is to study the possibility of the application of fixed-parameter tractable machinery to the construction of efficient algorithms for computationally hard problems from basic number theory.
 
@@ -73,9 +73,9 @@ Literature:
         "title": "The Partial Minimum Satisfiability problem",
         "supervisor": {
             "name": "Ivan Bliznets",
-            "email": "...@rug.nl"
+            "email": "i.bliznets@rug.nl"
         },
-        "short_description": "...",
+        "short_description": "Design and implement a branch-and-bound algorithm for the Partial Minimum Satisfiability problem, tackling the challenge of finding satisfying assignments while minimizing the number of satisfied clauses.",
         "long_description": "
 The Partial Minimum Satisfiability problem involves a CNF formula F, where some of the clauses are marked as hard clauses. The goal is to find a satisfying assignment that satisfies all hard clauses and the smallest number of other clauses. The length of the formula is defined as the number of literals in the formula. The objective of this project is to construct an algorithm for the Partial Minimum Satisfiability problem, with the running time measured in terms of the length of the formula or in terms of the overall number of variables and clauses. The algorithm will most likely be a branch-and-bound algorithm. You can find details about branching algorithms in Chapter 2 of the book [Exact Exponential Algorithms](https://folk.uib.no/nmiff/BookEA/BookEA.pdf).
 
@@ -97,9 +97,9 @@ Literature:
         "title": "Minimal Connected Tropical Sets",
         "supervisor": {
             "name": "Ivan Bliznets",
-            "email": "...@rug.nl"
+            "email": "i.bliznets@rug.nl"
         },
-        "short_description": "...",
+        "short_description": "Uncover the fascinating relationship between connected tropical sets and interval graphs by exploring the number of minimal connected tropical sets within these structured graph types, aiming for both exact calculations in small cases and generalized bounds for larger instances.",
         "long_description": "
 Suppose the vertices of a graph G are colored. We define a subset of vertices as a connected tropical set if it generates a connected graph that contains vertices of all colors from the original graph. A subset of vertices is a Minimal Connected Tropical Set if it is a Connected Tropical Set and it does not contain a smaller set that is also a Connected Tropical Set.
 
@@ -124,9 +124,9 @@ Below you can find literature that is relevant to this project:
         "title": "Theory and Practice of Bidirectional Typechecking",
         "supervisor": {
             "name": "Dan Frumin",
-            "email": "...@rug.nl"
+            "email": "d.frumin@rug.nl"
         },
-        "short_description": "...",
+        "short_description": "Study and build modern mechanisms for type-checking programming lanagues with higher-order features.",
         "long_description": "
 This project is about implementing a type system for a programming language. A type system determines which programs in a programming language are valid, and which ones are not.  A type system for example can reject a program that adds a number and a string together, thus catching a type error. And more advanced type system can catch more errors. The process of enforcing such a typing discipline is called type checking: given a program, annotated with types, a compiler checks whether to accept the program or reject it.
 
@@ -150,9 +150,9 @@ If you enjoyed the courses on functional programming or the elective course on c
         "title": "Formally verified functional programs in Rocq",
         "supervisor": {
             "name": "Dan Frumin",
-            "email": "...@rug.nl"
+            "email": "d.frumin@rug.nl"
         },
-        "short_description": "...",
+        "short_description": "Study purely-functional data structrues and prove their correctness.",
         "long_description": "
        The aim of this project is to build a formally verified correct software, and to familiarize yourself with the Coq system. Coq is a proof assistant and a programming language, which allows the user not only to write and execute functional programs, but also to prove properties about them.
 
@@ -173,9 +173,9 @@ Here are some more links that contextualize the project.
         "title": "From Gossip Protocols to Session Protocols (and Back)",
         "supervisor": {
             "name": "Jorge Pérez",
-            "email": "...@rug.nl"
+            "email": "j.a.perez@rug.nl"
         },
-        "short_description": "",
+        "short_description": "Explore the connections and differences between different kinds of protocols for concurrent communication.",
         "long_description": "
 The notion of protocol is everywhere in Computer Science. A well-known example are the security protocols that ensure that distributed communications can take place securely. 
 
@@ -209,9 +209,9 @@ For gossip protocols, the following course by Hans van Ditmarsch and Malvin Gatt
         "title": "A General Language for Concurrency: The Psi-Calculus",
         "supervisor": {
             "name": "Jorge Pérez",
-            "email": "...@rug.nl"
+            "email": "j.a.perez@rug.nl"
         },
-        "short_description": "..",
+        "short_description": "Explore type systems for concurrency on the basis of an expressive formal language.",
         "long_description": "
  Process calculi are small formalisms intended as programming models; they express concurrency in the form of multiple processes that exchange messages between them and execute simultaneously. There exist multiple process calculi, with different features and expressivity. The psi-calculus, proposed by Bengtson et al, is intended to be a flexible framework, designed in such a way that it generalizes several other process calculi. Indeed, existing process calculi are as specific instances of the psi-calculus.
 
@@ -238,8 +238,8 @@ See also the work by Huttel et al:
     {
         "title": "Well-quasi-orderings in computer science and their upper bounding",
         "supervisor": {
-            "name": "",
-            "email": "...@rug.nl"
+            "name": "Revantha Ramanayake",
+            "email": "d.r.s.ramanayake@rug.nl"
         },
         "short_description": "...",
         "long_description": "Let N be the set of natural numbers {0, 1, 2, .. }. Consider the binary relation <= on N^2 = { (x,y) | x ∈ N and y ∈ N } defined as:
