@@ -1,0 +1,46 @@
+{% assign projects = include.projects %}
+{% assign has_projects = projects and projects.size > 0 %}
+
+{% assign flattened_tags = projects | map: 'tags' | compact | join: ',' | split: ',' %}
+{% assign normalized_tags = '' %}
+{% for tag in flattened_tags %}
+  {% assign trimmed_tag = tag | strip %}
+  {% if trimmed_tag != '' %}
+    {% assign lowered = trimmed_tag | downcase %}
+    {% if normalized_tags == '' %}
+      {% assign normalized_tags = lowered %}
+    {% else %}
+      {% assign normalized_tags = normalized_tags | append: ',' | append: lowered %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+{% assign tag_list = '' %}
+{% if normalized_tags != '' %}
+  {% assign tag_list = normalized_tags | split: ',' | uniq | sort %}
+{% endif %}
+
+<section class="project-section" data-project-section>
+  <div class="project-section__header">
+    {% if include.heading %}
+      <h2 class="project-section__title">{{ include.heading }}</h2>
+    {% endif %}
+    <p class="muted project-section__intro">Narrow the projects down using the tags below.</p>
+  </div>
+
+{% if tag_list != '' and tag_list != empty %}
+    <div class="tag-filter" data-tag-filter>
+      <button type="button" class="tag-filter__btn is-active" data-tag="all" data-filter-control>All</button>
+      {% for tag in tag_list %}
+        {% if tag != '' %}
+          <button type="button" class="tag-filter__btn" data-tag="{{ tag }}" data-filter-control>{{ tag }}</button>
+        {% endif %}
+      {% endfor %}
+    </div>
+{% endif %}
+
+  {% if has_projects %}
+    {% include project-list.html projects=projects %}
+  {% else %}
+    <p>No projects are listed yet. Check back soon!</p>
+  {% endif %}
+</section>

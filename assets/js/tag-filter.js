@@ -1,60 +1,66 @@
 const initTagFilter = () => {
-  const filterContainer = document.querySelector("[data-tag-filter]");
-  const cards = Array.from(document.querySelectorAll(".project-card"));
+  const sections = Array.from(document.querySelectorAll("[data-project-section]"));
 
-  if (!cards.length) return;
+  sections.forEach((section) => {
+    const filterContainer = section.querySelector("[data-tag-filter]");
+    const cards = Array.from(section.querySelectorAll(".project-card"));
 
-  let activeTag = "all";
+    if (!cards.length) return;
 
-  const captureButtons = () =>
-    Array.from(document.querySelectorAll("[data-tag][data-filter-control]"));
+    let activeTag = "all";
 
-  const setActiveButtonState = (tag) => {
-    captureButtons().forEach((btn) => {
-      if (!btn.closest("[data-tag-filter]")) return;
-      if (btn.dataset.tag === tag) {
-        btn.classList.add("is-active");
-        btn.setAttribute("aria-pressed", "true");
-      } else {
-        btn.classList.remove("is-active");
-        btn.setAttribute("aria-pressed", "false");
+    const captureButtons = () =>
+      Array.from(section.querySelectorAll("[data-tag][data-filter-control]"));
+
+    const setActiveButtonState = (tag) => {
+      captureButtons().forEach((btn) => {
+        const isFilterButton = !!btn.closest("[data-tag-filter]");
+        if (!isFilterButton) return;
+
+        if (btn.dataset.tag === tag) {
+          btn.classList.add("is-active");
+          btn.setAttribute("aria-pressed", "true");
+        } else {
+          btn.classList.remove("is-active");
+          btn.setAttribute("aria-pressed", "false");
+        }
+      });
+    };
+
+    const applyFilter = (tag) => {
+      cards.forEach((card) => {
+        const datasetTags = (card.dataset.tags || "")
+          .split(",")
+          .map((t) => t.trim())
+          .filter(Boolean);
+        const matches = tag === "all" ? true : datasetTags.includes(tag);
+        card.classList.toggle("is-hidden", !matches);
+        card.setAttribute("aria-hidden", String(!matches));
+      });
+    };
+
+    const handleTagSelection = (tag, options = {}) => {
+      if (!tag || tag === activeTag) return;
+      activeTag = tag;
+      setActiveButtonState(tag);
+      applyFilter(tag);
+
+      if (filterContainer && options.scrollToFilter) {
+        filterContainer.scrollIntoView({ behavior: "smooth", block: "start" });
       }
-    });
-  };
+    };
 
-  const applyFilter = (tag) => {
-    cards.forEach((card) => {
-      const datasetTags = (card.dataset.tags || "")
-        .split(",")
-        .map((t) => t.trim())
-        .filter(Boolean);
-      const matches = tag === "all" ? true : datasetTags.includes(tag);
-      card.classList.toggle("is-hidden", !matches);
-      card.setAttribute("aria-hidden", String(!matches));
-    });
-  };
-
-  const handleTagSelection = (tag, options = {}) => {
-    if (!tag || tag === activeTag) return;
-    activeTag = tag;
-    setActiveButtonState(tag);
-    applyFilter(tag);
-
-    if (filterContainer && options.scrollToFilter) {
-      filterContainer.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
-  };
-
-  captureButtons().forEach((button) => {
-    button.addEventListener("click", () => {
-      handleTagSelection(button.dataset.tag, {
-        scrollToFilter: button.dataset.scrollToFilter === "true",
+    captureButtons().forEach((button) => {
+      button.addEventListener("click", () => {
+        handleTagSelection(button.dataset.tag, {
+          scrollToFilter: button.dataset.scrollToFilter === "true",
+        });
       });
     });
-  });
 
-  setActiveButtonState(activeTag);
-  applyFilter(activeTag);
+    setActiveButtonState(activeTag);
+    applyFilter(activeTag);
+  });
 };
 
 const initProjectDetails = () => {

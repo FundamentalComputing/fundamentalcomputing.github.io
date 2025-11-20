@@ -14,6 +14,10 @@
     {
         "title": "Interplay of Number Theory and Fixed-Parameter Tractable Algorithms ",
         "completed_by": "Arnaud van Hees",
+        "supervisor": {
+            "name": "Ivan Bliznets",
+            "email": "...@rug.nl"
+        },
         "year": 2025,
         "type": "BSc",
         "report_url": "https://fse.studenttheses.ub.rug.nl/35856/1/bCS2025VanHeesA.pdf"
@@ -22,6 +26,11 @@
     {
         "title": "Skeletal semantics for message-passing concurrency - from actors to channels and back",
         "completed_by": "Miguel Bartelsman",
+        "supervisor": {
+            "name": "Jorge Perez, Dan Frumin",
+            "email": "...@rug.nl"
+        },
+
         "type": "BSc",
         "year": 2022,
         "report_url": "https://fse.studenttheses.ub.rug.nl/28537/1/bCS_2022_BartelsmanMejiaMiguel.pdf"

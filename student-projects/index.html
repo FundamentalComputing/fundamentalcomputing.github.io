@@ -22,34 +22,37 @@ permalink: /student-projects/
           Would you like to do a project with the Fundamental Computing group?
         </p>
         <p>Insert more information here..</p>
-        
-        <p class="muted">Narrow the projects down using the tags below:</p>
-        {% assign flattened_tags = site.data.projects | map: 'tags' | compact | join: ',' | split: ',' %}
-        {% assign normalized_tags = '' %}
-        {% for tag in flattened_tags %}
-          {% assign trimmed_tag = tag | strip %}
-          {% if trimmed_tag != '' %}
-            {% assign lowered = trimmed_tag | downcase %}
-            {% if normalized_tags == '' %}
-              {% assign normalized_tags = lowered %}
-            {% else %}
-              {% assign normalized_tags = normalized_tags | append: ',' | append: lowered %}
-            {% endif %}
-          {% endif %}
-        {% endfor %}
-        {% assign tag_list = normalized_tags | split: ',' | uniq | sort %}
-        {% if tag_list and tag_list != empty %}
-        <div class="tag-filter" data-tag-filter>
-          <button type="button" class="tag-filter__btn is-active" data-tag="all" data-filter-control>All</button>
-            {% for tag in tag_list %}
-              {% if tag != '' %}
-                <button type="button" class="tag-filter__btn" data-tag="{{ tag }}" data-filter-control>{{ tag }}</button>
-              {% endif %}
-          {% endfor %}
-        </div>
+
+        {% assign missing_category_projects = site.data.projects
+          | where_exp:"item",
+             "item.category != 'BSc' and item.category != 'MSc'" %}
+        {% if missing_category_projects and missing_category_projects != empty %}
+          <div class="notice notice--warning" role="alert">
+            <strong>Heads up:</strong>
+            Some projects are missing a <code>category</code> and are not shown in the BSc/MSc lists.
+            <ul class="notice__list">
+              {% for project in missing_category_projects %}
+                <li>{{ project.title }}</li>
+              {% endfor %}
+            </ul>
+          </div>
         {% endif %}
-        
-        {% include project-list.html %}
+
+
+        {% assign bsc_projects = site.data.projects
+          | where:"category","BSc" %}
+        {% include project-section.html
+          heading="BSc Projects"
+          projects=bsc_projects
+        %}
+
+        {% assign msc_projects = site.data.projects
+          | where:"category", "MSc" %}
+        {% include project-section.html
+          heading="MSc Projects"
+          projects=msc_projects
+        %}
+
       </main>
       {% include site-footer.html %}
     </div>

@@ -17,6 +17,7 @@ If you want to know more about treewidth you can watch <a href=\"https://www.you
 
 This project is intended for students interested in graphs.",
         "tags": ["algorithms", "graphs"],
+        "category": "BSc",
         "available": 2
     },
 
@@ -40,6 +41,7 @@ For additional information on this topic see [this paper](https://arxiv.org/abs/
 This project is intended for students interested in algorithms, NP-completeness and introductory number theory.
 ",
         "tags": ["algorithms", "complexity"],
+        "category": "BSc",
         "available": 1
     },
 
@@ -66,6 +68,7 @@ Literature:
   - [List of NP-complete problems](https://en.wikipedia.org/wiki/List_of_NP-complete_problems)
 ",
         "tags": ["algorithms", "complexity"],
+        "category": "BSc",
         "available": 2
     },
 
@@ -90,6 +93,7 @@ Literature:
 - [Description of the Partial Minimum Satisfiability problem and its applications.](https://www.sciencedirect.com/science/article/pii/S0004370212000616)
 ",
         "tags": ["algorithms"],
+        "category": "BSc",
         "available": 2
     },
 
@@ -117,6 +121,7 @@ Below you can find literature that is relevant to this project:
 -    [Enumeration of Minimal Tropical Connected Sets](https://link.springer.com/chapter/10.1007/978-3-031-30448-4_10)
 ",
         "tags": ["algorithms", "graphs"],
+        "category": "BSc",
         "available": 1
     },
 
@@ -143,6 +148,7 @@ The goal of this project is to study bidirectional type checking and implementin
 If you enjoyed the courses on functional programming or the elective course on compiler construction, then this project might be for you!
 ",
         "tags": ["type systems", "programming languages"],
+        "category": "BSc",
         "available": 1
     },
 
@@ -166,6 +172,7 @@ Required skills: Knowledge of functional programming and mathematical induction
 Here are some more links that contextualize the project.
 ",
         "tags": ["logic", "functional programming", "verification"],
+        "category": "BSc",
         "available": 2
     },
 
@@ -202,6 +209,7 @@ For gossip protocols, the following course by Hans van Ditmarsch and Malvin Gatt
     <https://malv.in/2022/gossip/>
 ",
         "tags": ["type systems", "concurrency"],
+        "category": "BSc",
         "available": 2
     },
 
@@ -232,6 +240,7 @@ See also the work by Huttel et al:
 - [A Generic Type System for Higher-Order Psi-Calculus](https://arxiv.org/pdf/2209.02354v1)
 ",
         "tags": ["concurrency", "programming languages", "type systems"],
+        "category": "BSc",
         "available": 2
     },
 
@@ -278,7 +287,8 @@ This topic is suited to a student who is interested in the mathematical aspects 
 
 Diego Figueira, Santiago Figueira, Sylvain Schmitz, Philippe Schnoebelen: Ackermannian and Primitive-Recursive Bounds with Dickson's Lemma. ACM/IEEE Symposium on Logic in Computer Science LICS 2011: 269-278",
         "tags": ["logic", "complexity"],
-        "available": 1
+        "available": 1,
+        "category": "BSc",
     },
 
     {
@@ -290,6 +300,31 @@ Diego Figueira, Santiago Figueira, Sylvain Schmitz, Philippe Schnoebelen: Ackerm
         "short_description": "...",
         "long_description": "...",
         "tags": ["logic"],
-        "available": 2
+        "available": 1,
+        "category": "MSc"
     },
+    {
+        "title": "Title 2",
+        "supervisor": {
+            "name": "Supervisor",
+            "email": "...@rug.nl"
+        },
+        "short_description": "...",
+        "long_description": "...",
+        "tags": ["logic", "algorithms"],
+        "available": 1,
+        "category": "MSc"
+    },
+    {
+        "title": "Title 3",
+        "supervisor": {
+            "name": "Supervisor",
+            "email": "...@rug.nl"
+        },
+        "short_description": "...",
+        "long_description": "...",
+        "tags": ["complexity", "algorithms"],
+        "available": 1,
+        "category": "MSc"
+    }
 ]
