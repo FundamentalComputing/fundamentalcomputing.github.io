@@ -153,6 +153,33 @@ If you enjoyed the courses on functional programming or the elective course on c
     },
 
     {
+        "title": "FitchVIZIER: Improvements and extensions",
+        "supervisor": {
+            "name": "Dan Frumin",
+            "email": "d.frumin@rug.nl"
+        },
+        "short_description": "",
+        "long_description": "
+FitchVIZIER is a proof checker for Fitch-style proofs written in Rust and used in the course \"Introduction to Logic\" in the CS and AI programs.
+This project concerns possible improvements and extensions, raging from mostly practical to mostly theoretical.
+The idea is the during the course of this bachelor project you will study the topic from the theoretical point of view and implement it in FitchVIZIER.
+
+Given the context, this project is suitable for students who are interested and have some experience with logic and Rust.
+
+Potential improvements/extensions are:
+
+- An implementaiton of airthmetic and proofs with induction
+- Support for \"partial\" proofs
+- A module system
+- Advanced unification algorithm
+- Conversaion between Fitch-style and Gentzen-style proof systems
+",
+        "tags": ["logic", "programming"],
+        "category": "BSc",
+        "available": 2
+    },
+
+    {
         "title": "Formally verified functional programs in Rocq",
         "supervisor": {
             "name": "Dan Frumin",
@@ -175,6 +202,34 @@ Here are some more links that contextualize the project.
         "category": "BSc",
         "available": 2
     },
+
+    {
+        "title": "Programming with First-Class Continuations",
+        "supervisor": {
+            "name": "Dan Frumin",
+            "email": "d.frumin@rug.nl"
+        },
+        "short_description": ".",
+        "long_description": "
+In this project you will study programming with first-class continuations. ....",
+        "tags": ["type theory", "functional programming"],
+        "category": "BSc",
+        "available": 1
+    },
+
+    {
+        "title": "Implementing a Verified Compiler in Lean",
+        "supervisor": {
+            "name": "Dan Frumin",
+            "email": "d.frumin@rug.nl"
+        },
+        "short_description": ".",
+        "long_description": "....",
+        "tags": ["type theory", "functional programming", "verification"],
+        "category": "BSc",
+        "available": 1
+    },
+
 
     {
         "title": "From Gossip Protocols to Session Protocols (and Back)",
