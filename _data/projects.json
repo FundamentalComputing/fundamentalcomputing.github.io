@@ -230,6 +230,46 @@ In this project you will study programming with first-class continuations. ...."
         "available": 1
     },
 
+    {
+        "title": "Algebraic Effects and Handlers",
+        "supervisor": {
+            "name": "Dan Frumin",
+            "email": "d.frumin@rug.nl"
+        },
+        "short_description": ".",
+        "long_description": "....",
+        "tags": ["type theory", "functional programming"],
+        "category": "BSc",
+        "available": 1
+    },
+
+    {
+        "title": "Polymorphism and Row-Polymorphism",
+        "supervisor": {
+            "name": "Dan Frumin",
+            "email": "d.frumin@rug.nl"
+        },
+        "short_description": ".",
+        "long_description": "....",
+        "tags": ["type theory", "functional programming"],
+        "category": "BSc",
+        "available": 1
+    },
+
+
+    {
+        "title": "Gradual Typing and Guarantees",
+        "supervisor": {
+            "name": "Dan Frumin",
+            "email": "d.frumin@rug.nl"
+        },
+        "short_description": ".",
+        "long_description": "....",
+        "tags": ["type theory", "functional programming"],
+        "category": "BSc",
+        "available": 1
+    },
+
 
     {
         "title": "From Gossip Protocols to Session Protocols (and Back)",
