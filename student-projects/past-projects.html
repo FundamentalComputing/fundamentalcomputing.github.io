@@ -19,19 +19,23 @@ permalink: /student-projects/past-projects.html
 
         {% assign completed_projects = site.data['projects-finished'] %}
         {% if completed_projects and completed_projects.size > 0 %}
+          {% assign projects_by_year = completed_projects | group_by: "year" | sort: "name" | reverse %}
           <ul class="past-projects">
-            {% for project in completed_projects %}
-              <li>
-                <p class="past-project__title">
-                  <a href="{{ project.report_url }}" target="_blank" rel="noopener">
-                    {{ project.title }}
-                  </a>
-                </p>
-                <p class="past-project__meta">
-                  {{ project.completed_by }}, {{ project.type }} {{ project.year }}
-                </p>
-                <p class="muted">Supervised by {{ project.supervisor.name }}</p>
-              </li>
+            {% for year_group in projects_by_year %}
+              {% assign projects_sorted = year_group.items | sort: "title" %}
+              {% for project in projects_sorted %}
+                <li>
+                  <p class="past-project__title">
+                    <a href="{{ project.report_url }}" target="_blank" rel="noopener">
+                      {{ project.title }}
+                    </a>
+                  </p>
+                  <p class="past-project__meta">
+                    {{ project.completed_by }}, {{ project.type }} {{ project.year }}
+                  </p>
+                  <p class="muted">Supervised by {{ project.supervisor.name }}</p>
+                </li>
+              {% endfor %}
             {% endfor %}
           </ul>
         {% else %}

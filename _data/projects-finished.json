@@ -1,6 +1,110 @@
 [
 
     {
+        "title": "A Model Checker for Game Logic via Parity Games",
+        "supervisor": {
+            "name": "Helle Hvid Hansen, Jorge Perez",
+            "email": "...@rug.nl"
+        },
+        "completed_by": "Eelke Landsaat",
+        "year": 2022,
+        "type": "BSc",
+        "report_url": "https://fse.studenttheses.ub.rug.nl/28126/1/bCS_2022_LandsaatE.pdf"
+    },
+    {
+        "title": "Automating XML parser generation for specific data operations",
+        "supervisor": {
+            "name": "Fadi Mohsen, Jorge Perez",
+            "email": "...@rug.nl"
+        },
+        "completed_by": "Lars Andringa",
+        "year": 2022,
+        "type": "BSc",
+        "report_url": "https://fse.studenttheses.ub.rug.nl/27665/1/Thesis%20v1.13.30.pdf"
+    },
+    {
+        "title": "Linear algorithms for Parity Games with the Signature of a Potential",
+        "supervisor": {
+            "name": "Oliver Lorscheid, Jorge Perez",
+            "email": "...@rug.nl"
+        },
+        "completed_by": "Andrei Dumitriu",
+        "year": 2022,
+        "type": "BSc",
+        "report_url": "https://fse.studenttheses.ub.rug.nl/28619/1/bCS_2022_DumitriuA.pdf"
+    },
+    {
+        "title": "Comparing Deadlock-Free Processes, Revisited",
+        "supervisor": {
+            "name": "Jorge Perez",
+            "email": "...@rug.nl"
+        },
+        "completed_by": "Channa Dias Perera",
+        "year": 2023,
+        "type": "BSc",
+        "report_url": "https://fse.studenttheses.ub.rug.nl/31465/1/ComparingDeadlockFreeProcessesRevisited.pdf"
+    },
+    {
+        "title": "A dynamic approach to protocol conformance verification using multiparty session types",
+        "supervisor": {
+            "name": "Jorge Perez, Bas van den Heuvel",
+            "email": "...@rug.nl"
+        },
+        "completed_by": "Rares-Andrei Dobre",
+        "year": 2022,
+        "type": "BSc",
+        "report_url": "https://fse.studenttheses.ub.rug.nl/27758/1/bCS_2022_DobreRA.pdf"
+    },
+    {
+        "title": "Strong Normalization in Message-Passing Concurrency",
+        "supervisor": {
+            "name": "Jorge Perez",
+            "email": "...@rug.nl"
+        },
+        "completed_by": "Evrikli Xhelo",
+        "year": 2019,
+        "type": "BSc",
+        "report_url": "https://fse.studenttheses.ub.rug.nl/20448/1/THESIS.pdf"
+    },
+    {
+        "title": "Enhancing the Automata Theory Course with Notions from Reactive Systems ",
+        "supervisor": {
+            "name": "Jorge Perez, Revantha Ramanayake",
+            "email": "...@rug.nl"
+        },
+        "completed_by": "Miriam-Bogdana Agafitei",
+        "year": 2022,
+        "type": "BSc",
+        "report_url": "https://fse.studenttheses.ub.rug.nl/28555/1/bCS_2022_AgafiteiMB.pdf"
+    },
+
+
+    {
+        "title": "Model Structures and Infinity Categories",
+        "supervisor": {
+            "name": "Dan Frumin, Oliver Lorscheid",
+            "email": "...@rug.nl"
+        },
+        "completed_by": "Levi Moes",
+        "year": 2025,
+        "type": "MSc",
+        "report_url": "https://fse.studenttheses.ub.rug.nl/36747/1/main.pdf"
+
+    },
+    {
+        "title": "Bounded countermodels for fragments of FLec",
+        "supervisor": {
+            "name": "Dan Frumin, Revantha Ramanayake",
+            "email": "...@rug.nl"
+        },
+        "completed_by": "Lisanne Sibma",
+        "year": 2025,
+        "type": "MSc",
+        "report_url": "https://fse.studenttheses.ub.rug.nl/36671/1/mMATH2025SibmaLI.pdf"
+
+    },
+
+    {
         "title": "Formal Verification of Pairing Heaps in Rocq",
         "supervisor": {
             "name": "Dan Frumin, Jorge Perez",
