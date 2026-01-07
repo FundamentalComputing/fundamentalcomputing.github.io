@@ -19,9 +19,9 @@ permalink: /student-projects/
       {% include site-header.html %}
       <main aria-live="polite">
         <p>
-          Would you like to do a project with the Fundamental Computing group?
+          Are you interersted in doing a project with the Fundamental Computing group?
+          We offer a number of projects on mostly theoretical topics, please see the selection below. A lot of the projects are open ended and can be tweaked or adapted; please feel free to contact the potential supervisors to learn more or discuss the specifics.
         </p>
-        <p>Insert more information here..</p>
 
         {% assign missing_category_projects = site.data.projects
           | where_exp:"item",
@@ -46,12 +46,12 @@ permalink: /student-projects/
           projects=bsc_projects
         %}
 
-        {% assign msc_projects = site.data.projects
-          | where:"category", "MSc" %}
-        {% include project-section.html
-          heading="MSc Projects"
-          projects=msc_projects
-        %}
+<section class="project-section" data-project-section>
+  <div class="project-section__header">
+    <h2 class="project-section__title">MSc projects</h2>
+    <p>We do not publish specific project proposals yet, and students are invited to contact group members directly for specific project topics.</p>
+  </div>
+</section>
 
       </main>
       {% include site-footer.html %}

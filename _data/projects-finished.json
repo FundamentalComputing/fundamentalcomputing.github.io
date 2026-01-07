@@ -1,14 +1,137 @@
 [
+
     {
-        "title": " Verified Functional Graph Algorithms using The Rocq Prover",
+        "title": "Formal Verification of Pairing Heaps in Rocq",
         "supervisor": {
-            "name": "Dan Frumin",
+            "name": "Dan Frumin, Jorge Perez",
+            "email": "...@rug.nl"
+        },
+        "completed_by": "Visan Cosmin",
+        "year": 2025,
+        "type": "BSc",
+        "report_url": "https://fse.studenttheses.ub.rug.nl/36504/1/bCS2025VisanCI.pdf"
+    },
+
+    {
+        "title": "Formal Verification of Leftist and Skew Heaps in Rocq",
+        "supervisor": {
+            "name": "Dan Frumin, Jorge Perez",
+            "email": "...@rug.nl"
+        },
+        "completed_by": "Elena Dumitrache",
+        "year": 2025,
+        "type": "BSc",
+        "report_url": "https://fse.studenttheses.ub.rug.nl/36519/1/bCS2025DumitracheEM.pdf"        
+    },
+
+    {
+        "title": "Programming and Reasoning with Monads",
+        "supervisor": {
+            "name": "Dan Frumin, Jorge Perez",
+            "email": "...@rug.nl"
+        },
+        "completed_by": "Andrei Nita",
+        "year": 2025,
+        "type": "BSc",
+        "report_url": "https://fse.studenttheses.ub.rug.nl/36614/1/bCS2025NitaAA.pdf"
+    },
+
+    {
+        "title": "Verified Functional Graph Algorithms using The Rocq Prover",
+        "supervisor": {
+            "name": "Dan Frumin, Jorge Perez",
             "email": "...@rug.nl"
         },
         "completed_by": "Leopold Frieberger",
         "year": 2025,
         "type": "BSc",
         "report_url": "https://fse.studenttheses.ub.rug.nl/36509/1/Bachelors-Thesis-Leopold-Frieberger-Repository.pdf"
+    },
+
+    {
+        "title": "The Leader Election Problem in a Typed Pi-calculus",
+        "supervisor": {
+            "name": "Jorge Perez, Dan Frumin",
+            "email": "...@rug.nl"
+        },
+        "completed_by": "Barnabás Tarcali",
+        "year": 2024,
+        "type": "BSc",
+        "report_url": "https://fse.studenttheses.ub.rug.nl/33494/1/bCS2024TarcaliB.pdf"
+    },
+
+    {
+        "title": "Concurrent Programming Using Multicore OCaml",
+        "supervisor": {
+            "name": "Dan Frumin, Jorge Perez",
+            "email": "...@rug.nl"
+        },
+        "completed_by": "Stephanos Faustmann",
+        "year": 2024,
+        "type": "BSc",
+        "report_url": "https://fse.studenttheses.ub.rug.nl/33687/1/bCS-2024FaustmannS.pdf"
+    },
+
+    {
+        "title": "Formal Verification of 2-3 Trees in Coq",
+        "supervisor": {
+            "name": "Dan Frumin, Jorge Perez",
+            "email": "...@rug.nl"
+        },
+        "completed_by": "Matei Cornea",
+        "year": 2024,
+        "type": "BSc",
+        "report_url": "https://fse.studenttheses.ub.rug.nl/33570/1/2-3TreesReport.pdf"
+    },
+
+
+    {
+        "title": "Hoare Logics for Skeletal Semantics",
+        "supervisor": {
+            "name": "Dan Frumin, Jorge Perez",
+            "email": "...@rug.nl"
+        },
+        "completed_by": "Laura Schimbător",
+        "year": 2022,
+        "type": "BSc",
+        "report_url": "https://fse.studenttheses.ub.rug.nl/28053/1/bCS_2022_SchimbatorLA.pdf"
+    },
+
+    {
+        "title": "Skeletal semantics for message-passing concurrency - from actors to channels and back",
+        "completed_by": "Miguel Bartelsman",
+        "supervisor": {
+            "name": "Dan Frumin, Jorge Perez",
+            "email": "...@rug.nl"
+        },
+
+        "type": "BSc",
+        "year": 2022,
+        "report_url": "https://fse.studenttheses.ub.rug.nl/28537/1/bCS_2022_BartelsmanMejiaMiguel.pdf"
+    },
+
+    {
+        "title": "Formalization of modal logic S5 in the Coq proof assistant",
+        "supervisor": {
+            "name": "Dan Frumin, Revantha Ramanayake",
+            "email": "...@rug.nl"
+        },
+        "completed_by": "Lubor Budaj",
+        "year": 2022,
+        "type": "BSc",
+        "report_url": "https://fse.studenttheses.ub.rug.nl/28482/1/BSc_Thesis_final.pdf"
+    },
+
+    {
+        "title": "Executable Specifications of Message-based Concurrency in Maude",
+        "supervisor": {
+            "name": "Jorge Perez, Dan Frumin",
+            "email": "...@rug.nl"
+        },
+        "completed_by": "Bastiaan Haaksema",
+        "year": 2021,
+        "type": "BSc",
+        "report_url": "https://fse.studenttheses.ub.rug.nl/25451/1/bCS_2021_HaaksemaB.pdf"
     },
 
     {
@@ -21,18 +144,6 @@
         "year": 2025,
         "type": "BSc",
         "report_url": "https://fse.studenttheses.ub.rug.nl/35856/1/bCS2025VanHeesA.pdf"
-    },
-    
-    {
-        "title": "Skeletal semantics for message-passing concurrency - from actors to channels and back",
-        "completed_by": "Miguel Bartelsman",
-        "supervisor": {
-            "name": "Jorge Perez, Dan Frumin",
-            "email": "...@rug.nl"
-        },
-
-        "type": "BSc",
-        "year": 2022,
-        "report_url": "https://fse.studenttheses.ub.rug.nl/28537/1/bCS_2022_BartelsmanMejiaMiguel.pdf"
     }
+    
 ]

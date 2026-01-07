@@ -146,6 +146,8 @@ The goal of this project is to study bidirectional type checking and implementin
 
 
 If you enjoyed the courses on functional programming or the elective course on compiler construction, then this project might be for you!
+
+Additional reading: [Bidirectional Typing Rules: A Tutorial](https://davidchristiansen.dk/tutorials/bidirectional.pdf) and [Lecture Notes on Bidirectional Typechecking](https://www.cs.cmu.edu/~fp/courses/15312-f04/handouts/15-bidirectional.pdf)
 ",
         "tags": ["type systems", "programming languages"],
         "category": "BSc",
@@ -168,15 +170,17 @@ Given the context, this project is suitable for students who are interested and 
 
 Potential improvements/extensions are:
 
-- An implementaiton of airthmetic and proofs with induction
+- Support for external theorems and a module system
+
+- An implementaiton of proofs by induction and unification
+
 - Support for \"partial\" proofs
-- A module system
-- Advanced unification algorithm
+
 - Conversaion between Fitch-style and Gentzen-style proof systems
 ",
         "tags": ["logic", "programming"],
         "category": "BSc",
-        "available": 2
+        "available": 1
     },
 
     {
@@ -187,48 +191,28 @@ Potential improvements/extensions are:
         },
         "short_description": "Study purely-functional data structrues and prove their correctness.",
         "long_description": "
-       The aim of this project is to build a formally verified correct software, and to familiarize yourself with the Coq system. Coq is a proof assistant and a programming language, which allows the user not only to write and execute functional programs, but also to prove properties about them.
+       The aim of this project is to build a formally verified correct software, and to familiarize yourself with the Rocq system. Rocq is a proof assistant and a programming language, which allows the user not only to write and execute functional programs, but also to prove properties about them.
 
 
-In the first part of this programming project the student will first familiarize themselves with the basics of Coq. In the second part, the student will pick an algorithm or a data structure – for example, a queue, a look-up table, a binary tree, etc – and they will implement and verify it.
+In the first part of this programming project the student will first familiarize themselves with the basics of Rocq. In the second part, the student will pick an algorithm or a data structure – for example, a queue, a look-up table, a binary tree, etc – and they will implement and verify it.
 
 
 Required skills: Knowledge of functional programming and mathematical induction
 
 
-Here are some more links that contextualize the project.
+Here are some more links that contextualize the project:
+
+- [Introduction to the Coq proof-assistant for practical software verification](https://www.lri.fr/~paulin/LASER/course-notes.pdf)
+
+- A book on [Verified Functinal Algorithms](https://softwarefoundations.cis.upenn.edu/vfa-current/index.html)
+
+- See also the [previous student projects](past-projects.html) on this topic.
 ",
         "tags": ["logic", "functional programming", "verification"],
         "category": "BSc",
         "available": 2
     },
 
-    {
-        "title": "Programming with First-Class Continuations",
-        "supervisor": {
-            "name": "Dan Frumin",
-            "email": "d.frumin@rug.nl"
-        },
-        "short_description": ".",
-        "long_description": "
-In this project you will study programming with first-class continuations. ....",
-        "tags": ["type theory", "functional programming"],
-        "category": "BSc",
-        "available": 1
-    },
-
-    {
-        "title": "Implementing a Verified Compiler in Lean",
-        "supervisor": {
-            "name": "Dan Frumin",
-            "email": "d.frumin@rug.nl"
-        },
-        "short_description": ".",
-        "long_description": "....",
-        "tags": ["type theory", "functional programming", "verification"],
-        "category": "BSc",
-        "available": 1
-    },
 
     {
         "title": "Algebraic Effects and Handlers",
@@ -236,15 +220,39 @@ In this project you will study programming with first-class continuations. ...."
             "name": "Dan Frumin",
             "email": "d.frumin@rug.nl"
         },
-        "short_description": ".",
-        "long_description": "....",
+        "short_description": "Algebriac Effects are a recent programming paradigm for handling effects in functional programming languages",
+        "long_description": "
+Algebraic Effects is a formal system for describing and programming with side-effects in functional programming. They generalize a large class of familiar effects (like I/O, exceptions, mutable state), while allowing for compositional and modular programming and reasoning. In the paradigm of algebraic effects, specific side effects can be encoded using algebraic abstractions (hence the name) and treated as first-class objects with the use of handlers.
+
+While originating in theoretical computer science, algebraic effects have been implemented most notably as part of the latest release of the OCaml programming language, where they are used for the implementation of the concurrent subsystem.
+
+The goal of this project is to study both the theoretical foundations of algebraic effects, as well as the practice of programming with algebraic effects in OCaml.
+To this end, the student is  to investigate the mathematical foundations of algebraic effects, and report on how it is connected with the practice of programming.
+
+At the end the student is expected to provide a report, which can serve as a guide to algebraic effects for fellow students who might be interested in the topic, as well as a collection of examples written in OCaml.
+
+Some relevant reading:
+
+- [An Introduction to Algebraic Effects and Handlers](https://www.eff-lang.org/handlers-tutorial.pdf)
+
+- [Programming with Algebraic Effects and Handlers](https://arxiv.org/pdf/1203.1539)
+
+- [OCaml Language Manual: Effect Handlers](https://ocaml.org/manual/5.4/effects.html)
+
+- [Effective Programming: Adding an Effect System to OCaml](https://www.janestreet.com/tech-talks/effective-programming/)
+
+- [Friendship ended with Monads: Testing out Algebraic effects in OCaml for Animations](https://gopiandcode.uk/logs/log-bye-bye-monads-algebraic-effects.html)
+
+- [What is algebraic about algebraic effects and handlers?](https://arxiv.org/abs/1807.05923)
+
+",
         "tags": ["type theory", "functional programming"],
         "category": "BSc",
         "available": 1
     },
 
     {
-        "title": "Polymorphism and Row-Polymorphism",
+        "title": "Gradual Typing and Its Guarantees",
         "supervisor": {
             "name": "Dan Frumin",
             "email": "d.frumin@rug.nl"
@@ -258,86 +266,79 @@ In this project you will study programming with first-class continuations. ...."
 
 
     {
-        "title": "Gradual Typing and Guarantees",
+        "title": "Reasoning about clients and servers using logic",
         "supervisor": {
-            "name": "Dan Frumin",
-            "email": "d.frumin@rug.nl"
+            "name": "Jorge Pérez",
+            "email": "j.a.perez@rug.nl"
         },
-        "short_description": ".",
-        "long_description": "....",
-        "tags": ["type theory", "functional programming"],
+        "short_description": "Learn how to formally verify client-server programs using logic!",
+        "long_description": "
+This project concerns formal languages able to express concurrency, in the form of processes that execute simultaneously and interact with each other by exchanging messages. We are particularly interested in message-passing processes that follow a client-server architecture, where client processes send a message to invoke some server process that provides some useful functionality and is always available. This kind of client-server interaction is very common in practice, and it is important to have precise tools to reason about the correct behavior of clients and servers. 
+
+Interestingly, logic can provide a precise setting to reason about clients, servers, and their intended interactions. This project concerns [linear logic](https://en.wikipedia.org/wiki/Linear_logic), a type of logic that tracks resources used by processes, in which client-server interactions can be neatly represented. There are several seemingly related logical characterizations of client-server interactions using linear logic; the goal of this project is to study the most important characterizations and to compare their most relevant characteristics by means of examples. 
+
+In this project you will learn about models of concurrency, static verification (type systems), and the Curry-Howard correspondence: a beautiful connection between static verification and logic. 
+See <https://www.jperez.nl/teaching/projects> for a list of suggested pointers. 
+
+
+**Deliverables:**
+A written report, in the style of a scientific paper, that surveys in a self-contained manner different characterizations of client-sever interactions using linear logic.
+",
+        "tags": ["type systems", "concurrency", "logic"],
+        "category": "BSc",
+        "available": 1
+    },
+
+    {
+        "title": "The Dining Philosophers in APCP",
+        "supervisor": {
+            "name": "Jorge Pérez",
+            "email": "j.a.perez@rug.nl"
+        },
+        "short_description": "Learn to formally verify a classic concurrency scenario using logic",
+        "long_description": "
+This project concerns formal languages able to express concurrency, in the form of processes that execute simultaneously and interact with each other by exchanging messages. In particular, we are interested in APCP, a formal language in which message-passing processes implement protocols. In prior research, we have determined the formal conditions under which programs in APCP execute their protocols without running into a deadlock: the situation in which a program is stuck waiting for a message that will never arrive. We have used [linear logic](https://en.wikipedia.org/wiki/Linear_logic), a type of logic that tracks resources used by APCP processes, to ensure freedom from deadlocks.
+
+We have already demonstrated the power of APCP in different scenarios that involve concurrency. The goal of this project is to complement this work by developing an APCP program that implements a solution to [Dijkstra's Dining Philosophers problem](https://en.wikipedia.org/wiki/Dining_philosophers_problem), one of the most famous problems in concurrent programming. Concretely, in this project you will use APCP to implement a solution to the problem based on a resource hierarchy. That is, you will develop an implementation of the dining philosophers that exploits concurrent synchronizations and prove that it never runs into deadlocks. 
+
+In this project you will learn about models of concurrency, static verification (type systems), and the Curry-Howard correspondence: a beautiful connection between static verification and logic. 
+See <https://www.jperez.nl/teaching/projects> for a list of suggested pointers.
+
+
+**Deliverables:**
+A written report, in the style of a scientific paper, that presents your verified implementation of the Dining Philosophers problem in APCP. 
+
+",
+        "tags": ["concurrency", "type systems", "formal verification"],
+        "category": "BSc",
+        "available": 1
+    },
+
+    {
+        "title": "Upper Bounds for Concurrent Asynchronous Programs in APCP",
+        "supervisor": {
+            "name": "Jorge Pérez",
+            "email": "j.a.perez@rug.nl"
+        },
+        "short_description": "Learn to formally reason about resource usage in concurrency using types and logic",
+        "long_description": "
+This project concerns formal languages able to express concurrency, in the form of processes that execute simultaneously and interact with each other by exchanging messages. In particular, we are interested in APCP, a formal language in which message-passing processes implement protocols. These protocols are specified using session types, which describe structures of intended communication. Communication in APCP is asynchronous: a data structure called buffers is used to store messages that have been sent but not yet received. 
+
+Prior work by Gay and Vasconcelos (for a language similar to APCP) showed that one can obtain an upper bound on the necessary size of the buffers (see [here](https://www.di.fc.ul.pt/~vv/papers/gay.vasconcelos_linear-sessions.pdf)). Intuitively, the idea is to examine the intended protocol, and to derive an upper bound for a buffer using the protocol’s size. This informally means that a protocol with n message exchanges will require a larger buffer than the one needed to implement a protocol with k message exchanges, for any k < n. The goal of this project is to adapt the argument by Gay and Vasconcelos to the case of APCP. This entails studying the definitions and proofs by Gay and Vasconcelos and to check whether/how they apply to the case of APCP, in which session types are closely related to [linear logic](https://en.wikipedia.org/wiki/Linear_logic), a type of logic that tracks resources used by processes. 
+
+In this project you will learn about models of concurrency, static verification (type systems), and the Curry-Howard correspondence: a beautiful connection between static verification and logic. 
+See <https://www.jperez.nl/teaching/projects> for a list of suggested pointers.
+
+
+**Deliverables:**
+A written report, in the style of a scientific paper, that presents your formal analysis (definitions and proofs) for the upper bound of buffers in APCP. 
+",
+        "tags": ["concurrency", "type systems", "formal verification", "logic"],
         "category": "BSc",
         "available": 1
     },
 
 
-    {
-        "title": "From Gossip Protocols to Session Protocols (and Back)",
-        "supervisor": {
-            "name": "Jorge Pérez",
-            "email": "j.a.perez@rug.nl"
-        },
-        "short_description": "Explore the connections and differences between different kinds of protocols for concurrent communication.",
-        "long_description": "
-The notion of protocol is everywhere in Computer Science. A well-known example are the security protocols that ensure that distributed communications can take place securely. 
-
-
-This project concerns two other classes of protocols that are also relevant in practice: 
-
-
-    The first class of protocols, which we will call session protocols, describe a series of communication actions between different agents, as in an online transaction. The goal with session protocols is to ensure that agents complete their respective protocol without communication errors or getting stuck. 
-
-
-    The second class of protocols, which we will call gossip protocols, are similar but serve a different purpose: the goal is to disseminate a secret message, in such a way that all protocol participants eventually become aware of this private information. 
-
-
-Session and gossip protocols have been widely investigated in the literature, although separately and with different methods and techniques. On the one hand, gossip protocols have been studied using (dynamic) epistemic logics, and their associated model checking techniques for verification. On the other hand, session protocols have been studied using process calculi and type systems, some of which are based on logics. 
-
-
-The goal of this project is to survey existing approaches and explore whether the techniques used for analyzing session protocols can be used to analyze gossip protocols (and vice versa).
-
-
-See <https://www.jperez.nl/teaching/projects> for general orientation and introductory papers.
-
-
-For gossip protocols, the following course by Hans van Ditmarsch and Malvin Gattinger can be useful:
-    <https://malv.in/2022/gossip/>
-",
-        "tags": ["type systems", "concurrency"],
-        "category": "BSc",
-        "available": 2
-    },
-
-    {
-        "title": "A General Language for Concurrency: The Psi-Calculus",
-        "supervisor": {
-            "name": "Jorge Pérez",
-            "email": "j.a.perez@rug.nl"
-        },
-        "short_description": "Explore type systems for concurrency on the basis of an expressive formal language.",
-        "long_description": "
- Process calculi are small formalisms intended as programming models; they express concurrency in the form of multiple processes that exchange messages between them and execute simultaneously. There exist multiple process calculi, with different features and expressivity. The psi-calculus, proposed by Bengtson et al, is intended to be a flexible framework, designed in such a way that it generalizes several other process calculi. Indeed, existing process calculi are as specific instances of the psi-calculus.
-
-
-Just as mainstream programming languages use types (and type systems) to rule out errors derived from nonsensical program fragments, we can combine process calculi with type systems: this is useful to rule out processes containing incorrect or nonsensical behaviors (such as deadlocks). We then talk of typed process calculi, which are typically less expressive than untyped process calculi precisely because incorrect processes cannot be specified in them. 
-
-
-This project concerns the psi-calculus and type systems, and has two goals. The first goal is to survey the state of the art on the combination of the psi-calculus with type systems. The work of Huttel et al (referenced below) is a good starting point. The second goal is to explore possible extensions of existing type systems for the psi-calculus, considering important correctness properties such as deadlock-freedom. 
-
-
-See <https://www.jperez.nl/teaching/projects> for general orientation and introductory papers.
-
-
-See also the work by Huttel et al:
-
-- [Binary Session Types for Psi-Calculi](https://link.springer.com/chapter/10.1007/978-3-319-47958-3_6)
-
-- [A Generic Type System for Higher-Order Psi-Calculus](https://arxiv.org/pdf/2209.02354v1)
-",
-        "tags": ["concurrency", "programming languages", "type systems"],
-        "category": "BSc",
-        "available": 2
-    },
 
     {
         "title": "Well-quasi-orderings in computer science and their upper bounding",
@@ -385,41 +386,4 @@ Diego Figueira, Santiago Figueira, Sylvain Schmitz, Philippe Schnoebelen: Ackerm
         "available": 1,
         "category": "BSc",
     },
-
-    {
-        "title": "Title",
-        "supervisor": {
-            "name": "Supervisor",
-            "email": "...@rug.nl"
-        },
-        "short_description": "...",
-        "long_description": "...",
-        "tags": ["logic"],
-        "available": 1,
-        "category": "MSc"
-    },
-    {
-        "title": "Title 2",
-        "supervisor": {
-            "name": "Supervisor",
-            "email": "...@rug.nl"
-        },
-        "short_description": "...",
-        "long_description": "...",
-        "tags": ["logic", "algorithms"],
-        "available": 1,
-        "category": "MSc"
-    },
-    {
-        "title": "Title 3",
-        "supervisor": {
-            "name": "Supervisor",
-            "email": "...@rug.nl"
-        },
-        "short_description": "...",
-        "long_description": "...",
-        "tags": ["complexity", "algorithms"],
-        "available": 1,
-        "category": "MSc"
-    }
 ]
