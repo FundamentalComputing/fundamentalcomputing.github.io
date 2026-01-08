@@ -19,17 +19,34 @@
   {% assign tag_list = normalized_tags | split: ',' | uniq | sort %}
 {% endif %}
 
+{% assign flattened_supervisors = projects | map: 'supervisor' | compact %}
+{% assign supervisor_names = '' %}
+{% for supervisor in flattened_supervisors %}
+  {% assign supervisor_name = supervisor.name | strip %}
+  {% if supervisor_name != '' %}
+    {% if supervisor_names == '' %}
+      {% assign supervisor_names = supervisor_name %}
+    {% else %}
+      {% assign supervisor_names = supervisor_names | append: ',' | append: supervisor_name %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+{% assign supervisor_list = '' %}
+{% if supervisor_names != '' %}
+  {% assign supervisor_list = supervisor_names | split: ',' | uniq | sort_natural %}
+{% endif %}
+
 <section class="project-section" data-project-section>
   <div class="project-section__header">
     {% if include.heading %}
       <h2 class="project-section__title">{{ include.heading }}</h2>
     {% endif %}
-    <p class="muted project-section__intro">Narrow the projects down using the tags below.</p>
+    <p class="muted project-section__intro">Narrow the projects down by supervisor or tag.</p>
   </div>
 
 {% if tag_list != '' and tag_list != empty %}
     <div class="tag-filter" data-tag-filter>
-      <button type="button" class="tag-filter__btn is-active" data-tag="all" data-filter-control>All</button>
+      <button type="button" class="tag-filter__btn is-active" data-tag="all" data-filter-control>All tags</button>
       {% for tag in tag_list %}
         {% if tag != '' %}
           <button type="button" class="tag-filter__btn" data-tag="{{ tag }}" data-filter-control>{{ tag }}</button>
@@ -38,9 +55,20 @@
     </div>
 {% endif %}
 
-  {% if has_projects %}
-    {% include project-list.html projects=projects %}
-  {% else %}
-    <p>No projects are listed yet. Check back soon!</p>
-  {% endif %}
+{% if supervisor_list != '' and supervisor_list != empty %}
+    <div class="tag-filter" data-supervisor-filter>
+      <a href="#" class="tag-filter__btn is-active" data-supervisor="all" data-supervisor-control>All supervisors</a>
+      {% for supervisor in supervisor_list %}
+        {% if supervisor != '' %}
+          <a href="#" class="tag-filter__btn" data-supervisor="{{ supervisor | downcase }}" data-supervisor-control>{{ supervisor }}</a>
+        {% endif %}
+      {% endfor %}
+    </div>
+{% endif %}
+
+{% if has_projects %}
+  {% include project-list.html projects=projects %}
+{% else %}
+  <p>No projects are listed yet. Check back soon!</p>
+{% endif %}
 </section>

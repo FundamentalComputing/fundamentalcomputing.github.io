@@ -15,13 +15,18 @@
       {% if availability_value == false or availability_value == 0 or availability_value == nil %}
         {% assign is_unavailable = true %}
       {% endif %}
-      <li class="project-card{% if is_unavailable %} is-unavailable{% endif %}" id="{{ project_id }}" data-tags="{{ normalized_tags }}"{% if is_unavailable %} aria-disabled="true"{% endif %}>
+      {% assign supervisor_name = '' %}
+      {% if project.supervisor and project.supervisor.name %}
+        {% assign supervisor_name = project.supervisor.name | strip %}
+      {% endif %}
+      {% assign normalized_supervisor = supervisor_name | downcase %}
+      <li class="project-card{% if is_unavailable %} is-unavailable{% endif %}" id="{{ project_id }}" data-tags="{{ normalized_tags }}" data-supervisor="{{ normalized_supervisor }}"{% if is_unavailable %} aria-disabled="true"{% endif %}>
         <div class="project-card__header">
           <h2>{{ project.title }}</h2>
           {% if project.supervisor %}
             <p class="project-card__supervisor">
               <strong>Supervisor:</strong>
-              {{ project.supervisor.name }}
+              <a href="#" class="project-card__supervisor-link" data-supervisor="{{ normalized_supervisor }}" data-supervisor-control data-scroll-to-filter="true">{{ project.supervisor.name }}</a>
               {% if project.supervisor.email %}
                 · <a href="mailto:{{ project.supervisor.email }}">{{ project.supervisor.email }}</a>
               {% endif %}

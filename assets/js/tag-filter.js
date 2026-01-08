@@ -3,21 +3,29 @@ const initTagFilter = () => {
 
   sections.forEach((section) => {
     const filterContainer = section.querySelector("[data-tag-filter]");
+    const supervisorFilterContainer = section.querySelector("[data-supervisor-filter]");
     const cards = Array.from(section.querySelectorAll(".project-card"));
 
     if (!cards.length) return;
 
     let activeTag = "all";
+    let activeSupervisor = "all";
 
-    const captureButtons = () =>
+    const captureTagButtons = () =>
       Array.from(section.querySelectorAll("[data-tag][data-filter-control]"));
+    const captureSupervisorButtons = () =>
+      Array.from(section.querySelectorAll("[data-supervisor][data-supervisor-control]"));
 
-    const setActiveButtonState = (tag) => {
-      captureButtons().forEach((btn) => {
-        const isFilterButton = !!btn.closest("[data-tag-filter]");
+    const setActiveButtonState = (type, value) => {
+      const buttons = type === "supervisor" ? captureSupervisorButtons() : captureTagButtons();
+      const containerSelector = type === "supervisor" ? "[data-supervisor-filter]" : "[data-tag-filter]";
+      const dataKey = type === "supervisor" ? "supervisor" : "tag";
+
+      buttons.forEach((btn) => {
+        const isFilterButton = !!btn.closest(containerSelector);
         if (!isFilterButton) return;
 
-        if (btn.dataset.tag === tag) {
+        if (btn.dataset[dataKey] === value) {
           btn.classList.add("is-active");
           btn.setAttribute("aria-pressed", "true");
         } else {
@@ -27,13 +35,17 @@ const initTagFilter = () => {
       });
     };
 
-    const applyFilter = (tag) => {
+    const applyFilter = () => {
       cards.forEach((card) => {
         const datasetTags = (card.dataset.tags || "")
           .split(",")
           .map((t) => t.trim())
           .filter(Boolean);
-        const matches = tag === "all" ? true : datasetTags.includes(tag);
+        const datasetSupervisor = (card.dataset.supervisor || "").trim();
+        const matchesTag = activeTag === "all" ? true : datasetTags.includes(activeTag);
+        const matchesSupervisor =
+          activeSupervisor === "all" ? true : datasetSupervisor === activeSupervisor;
+        const matches = matchesTag && matchesSupervisor;
         card.classList.toggle("is-hidden", !matches);
         card.setAttribute("aria-hidden", String(!matches));
       });
@@ -42,24 +54,46 @@ const initTagFilter = () => {
     const handleTagSelection = (tag, options = {}) => {
       if (!tag || tag === activeTag) return;
       activeTag = tag;
-      setActiveButtonState(tag);
-      applyFilter(tag);
+      setActiveButtonState("tag", tag);
+      applyFilter();
 
       if (filterContainer && options.scrollToFilter) {
         filterContainer.scrollIntoView({ behavior: "smooth", block: "start" });
       }
     };
 
-    captureButtons().forEach((button) => {
-      button.addEventListener("click", () => {
+    const handleSupervisorSelection = (supervisor, options = {}) => {
+      if (!supervisor || supervisor === activeSupervisor) return;
+      activeSupervisor = supervisor;
+      setActiveButtonState("supervisor", supervisor);
+      applyFilter();
+
+      if (supervisorFilterContainer && options.scrollToFilter) {
+        supervisorFilterContainer.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    };
+
+    captureTagButtons().forEach((button) => {
+      button.addEventListener("click", (event) => {
+        event.preventDefault();
         handleTagSelection(button.dataset.tag, {
           scrollToFilter: button.dataset.scrollToFilter === "true",
         });
       });
     });
 
-    setActiveButtonState(activeTag);
-    applyFilter(activeTag);
+    captureSupervisorButtons().forEach((button) => {
+      button.addEventListener("click", (event) => {
+        event.preventDefault();
+        handleSupervisorSelection(button.dataset.supervisor, {
+          scrollToFilter: button.dataset.scrollToFilter === "true",
+        });
+      });
+    });
+
+    setActiveButtonState("tag", activeTag);
+    setActiveButtonState("supervisor", activeSupervisor);
+    applyFilter();
   });
 };
 

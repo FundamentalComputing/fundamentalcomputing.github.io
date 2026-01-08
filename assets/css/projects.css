@@ -209,6 +209,9 @@ main {
   border-radius: 999px;
   cursor: pointer;
   font-size: 0.95rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
   transition: all 0.2s ease;
 }
 
@@ -292,10 +295,15 @@ main {
   font-size: 0.95rem;
 }
 
+.project-card__supervisor-link a {
+  color: var(--text);
+}
+
 .project-card__supervisor a {
-  color: var(--accent);
+  color: var(--text);
   text-decoration: none;
 }
+
 
 .project-card__supervisor a:hover,
 .project-card__supervisor a:focus-visible {
