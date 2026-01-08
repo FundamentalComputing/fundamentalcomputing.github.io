@@ -190,7 +190,7 @@ The *Covering by Arithmetic Progression* problem asks: given a set of natural nu
 
 - Assess the practical effectiveness of your solutions.
 ",
-        "tags": ["algorithms", "implementaion", "heuristics"],
+        "tags": ["algorithms", "implementation", "heuristics"],
         "category": "BSc",
         "available": 1
     },
@@ -320,7 +320,7 @@ Here are some more links that contextualize the project:
             "name": "Dan Frumin",
             "email": "d.frumin@rug.nl"
         },
-        "short_description": "Algebriac Effects are a recent programming paradigm for handling effects in functional programming languages",
+        "short_description": "Algebraic Effects are a recent programming paradigm for handling effects in functional programming languages",
         "long_description": "
 Algebraic Effects is a formal system for describing and programming with side-effects in functional programming. They generalize a large class of familiar effects (like I/O, exceptions, mutable state), while allowing for compositional and modular programming and reasoning. In the paradigm of algebraic effects, specific side effects can be encoded using algebraic abstractions (hence the name) and treated as first-class objects with the use of handlers.
 
