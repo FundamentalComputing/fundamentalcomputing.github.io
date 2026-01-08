@@ -249,7 +249,7 @@ Additional reading:
 
 - [Lecture Notes on Bidirectional Typechecking](https://www.cs.cmu.edu/~fp/courses/15312-f04/handouts/15-bidirectional.pdf)
 ",
-        "tags": ["type systems", "programming languages"],
+        "tags": ["type theory", "programming languages"],
         "category": "BSc",
         "available": 1
     },
@@ -278,7 +278,7 @@ Potential improvements/extensions are:
 
 - Conversaion between Fitch-style and Gentzen-style proof systems
 ",
-        "tags": ["logic", "programming"],
+        "tags": ["logic", "implementation"],
         "category": "BSc",
         "available": 1
     },
@@ -308,7 +308,7 @@ Here are some more links that contextualize the project:
 
 - See also the [previous student projects](past-projects.html) on this topic.
 ",
-        "tags": ["logic", "functional programming", "verification"],
+        "tags": ["logic", "functional programming", "formal verification"],
         "category": "BSc",
         "available": 2
     },
@@ -405,7 +405,7 @@ See <https://www.jperez.nl/teaching/projects> for a list of suggested pointers.
 **Deliverables:**
 A written report, in the style of a scientific paper, that surveys in a self-contained manner different characterizations of client-sever interactions using linear logic.
 ",
-        "tags": ["type systems", "concurrency", "logic"],
+        "tags": ["type theory", "concurrency", "logic"],
         "category": "BSc",
         "available": 1
     },
@@ -432,7 +432,7 @@ See <https://www.jperez.nl/teaching/projects> for a list of suggested pointers.
 A written report, in the style of a scientific paper, that presents your verified implementation of the Dining Philosophers problem in APCP. 
 
 ",
-        "tags": ["concurrency", "type systems", "formal verification"],
+        "tags": ["concurrency", "type theory", "formal verification"],
         "category": "BSc",
         "available": 1
     },
@@ -458,7 +458,7 @@ See <https://www.jperez.nl/teaching/projects> for a list of suggested pointers.
 **Deliverables:**
 A written report, in the style of a scientific paper, that presents your formal analysis (definitions and proofs) for the upper bound of buffers in APCP. 
 ",
-        "tags": ["concurrency", "type systems", "formal verification", "logic"],
+        "tags": ["concurrency", "type theory", "formal verification", "logic"],
         "category": "BSc",
         "available": 1
     },

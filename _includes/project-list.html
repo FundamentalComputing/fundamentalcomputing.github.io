@@ -1,6 +1,9 @@
 {% assign projects = include.projects | default: site.data.projects %}
+{% assign projects = projects | group_by: "supervisor.name" | sort: "name" %}
 {% if projects and projects.size > 0 %}
   <ul class="project-grid">
+    {% for project_group in projects %}
+    {% assign projects = project_group.items | sort: "title" %}
     {% for project in projects %}
       {% assign project_id = project.title | slugify | append: '-' | append: forloop.index0 %}
       {% assign normalized_tags = '' %}
@@ -73,6 +76,7 @@
           </ul>
         {% endif %}
       </li>
+    {% endfor %}
     {% endfor %}
   </ul>
 {% else %}
