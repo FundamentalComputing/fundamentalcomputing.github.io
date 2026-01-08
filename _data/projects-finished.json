@@ -1,6 +1,28 @@
 [
 
-    {
+     {
+        "title": "Game Logic: A Proof Transformation from Gentzen to Hilbert",
+        "supervisor": {
+            "name": "Helle Hvid Hansen, Tijs van der Storm",
+            "email": "...@rug.nl"
+        },
+        "completed_by": "Steven van Schagen",
+        "year": 2022,
+        "type": "BSc",
+        "report_url": "https://fse.studenttheses.ub.rug.nl/28264/1/bCS_2022_vanSchagenSJ.pdf"
+    },
+     {
+        "title": "Towards Automated Theorem Proving in the CloG Proof System",
+        "supervisor": {
+            "name": "Helle Hvid Hansen, Revantha Ramanayake",
+            "email": "...@rug.nl"
+        },
+        "completed_by": "Han Meerholz",
+        "year": 2022,
+        "type": "BSc",
+        "report_url": "https://fse.studenttheses.ub.rug.nl/28388/1/bCS_2021_MeerholzJF.pdf"
+    },
+   {
         "title": "A Model Checker for Game Logic via Parity Games",
         "supervisor": {
             "name": "Helle Hvid Hansen, Jorge Perez",
@@ -10,6 +32,50 @@
         "year": 2022,
         "type": "BSc",
         "report_url": "https://fse.studenttheses.ub.rug.nl/28126/1/bCS_2022_LandsaatE.pdf"
+    },
+   {
+        "title": "Proof Transformations for Game Logic",
+        "supervisor": {
+            "name": "Helle Hvid Hansen, Tijd van der Storm",
+            "email": "...@rug.nl"
+        },
+        "completed_by": "Christopher Worthington",
+        "year": 2021,
+        "type": "BSc",
+        "report_url": "https://fse.studenttheses.ub.rug.nl/25673/1/bCS_2021_CWorthington.pdf"
+    },
+   {
+        "title": "From Accepting Computation to Satisfying Kripke Model",
+        "supervisor": {
+            "name": "Helle Hvid Hansen, Revantha Ramanayake",
+            "email": "...@rug.nl"
+        },
+        "completed_by": "Chris Ausema",
+        "year": 2021,
+        "type": "BSc",
+        "report_url": "https://fse.studenttheses.ub.rug.nl/26150/1/bCS_2021_Ausema.pdf.pdf"
+    },
+   {
+        "title": "Automated Proof Search in a Cyclic Proof System for Game Logic",
+        "supervisor": {
+            "name": "Helle Hvid Hansen, Revantha Ramanayake",
+            "email": "...@rug.nl"
+        },
+        "completed_by": "Christopher Worthington",
+        "year": 2023,
+        "type": "MSc",
+        "report_url": "https://fse.studenttheses.ub.rug.nl/31118/1/mCS_2023_Christopher%20Worthington.pdf"
+    },
+   {
+        "title": "Completeness over Kripke models of a cyclic proof system for game logic",
+        "supervisor": {
+            "name": "Helle Hvid Hansen, Alef Sterk",
+            "email": "...@rug.nl"
+        },
+        "completed_by": "Eline Hoexum",
+        "year": 2021,
+        "type": "MSc",
+        "report_url": "https://fse.studenttheses.ub.rug.nl/27849/1/mMATH_2022_HoexumES.pdf.pdf"
     },
     {
         "title": "Automating XML parser generation for specific data operations",
