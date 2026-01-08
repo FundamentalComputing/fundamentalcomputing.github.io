@@ -56,6 +56,17 @@
         "report_url": "https://fse.studenttheses.ub.rug.nl/26150/1/bCS_2021_Ausema.pdf.pdf"
     },
    {
+        "title": "Deduction Proof Evaluator for Fitch Style Proofs",
+        "supervisor": {
+            "name": "Helle Hvid Hansen, Daniel Feitosa",
+            "email": "...@rug.nl"
+        },
+        "completed_by": "Andrei Girjoaba",
+        "year": 2023,
+        "type": "BSc Honors College",
+        "report_url": "https://github.com/Girjoaba/Eunomia"
+    },
+   {
         "title": "Automated Proof Search in a Cyclic Proof System for Game Logic",
         "supervisor": {
             "name": "Helle Hvid Hansen, Revantha Ramanayake",
