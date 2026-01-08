@@ -3,7 +3,7 @@
 {% if projects and projects.size > 0 %}
   <ul class="project-grid">
     {% for project_group in projects %}
-    {% assign projects = project_group.items | sort: "title" %}
+    {% assign projects = project_group.items | sort_natural: "title" %}
     {% for project in projects %}
       {% assign project_id = project.title | slugify | append: '-' | append: forloop.index0 %}
       {% assign normalized_tags = '' %}
