@@ -163,12 +163,11 @@ main {
 }
 
 .past-projects {
-  margin: 2rem auto;
+  margin: 1rem auto;
   max-width: 48rem;
   padding-left: 1.25rem;
   display: flex;
   flex-direction: column;
-  gap: 0.8rem;
 }
 
 .past-project__title {
