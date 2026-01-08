@@ -271,13 +271,15 @@ Some relevant reading:
             "name": "Jorge Pérez",
             "email": "j.a.perez@rug.nl"
         },
-        "short_description": "Learn how to formally verify client-server programs using logic!",
+        "short_description": "Learn to formally verify client-server programs using logic!",
         "long_description": "
 This project concerns formal languages able to express concurrency, in the form of processes that execute simultaneously and interact with each other by exchanging messages. We are particularly interested in message-passing processes that follow a client-server architecture, where client processes send a message to invoke some server process that provides some useful functionality and is always available. This kind of client-server interaction is very common in practice, and it is important to have precise tools to reason about the correct behavior of clients and servers. 
 
-Interestingly, logic can provide a precise setting to reason about clients, servers, and their intended interactions. This project concerns [linear logic](https://en.wikipedia.org/wiki/Linear_logic), a type of logic that tracks resources used by processes, in which client-server interactions can be neatly represented. There are several seemingly related logical characterizations of client-server interactions using linear logic; the goal of this project is to study the most important characterizations and to compare their most relevant characteristics by means of examples. 
 
-In this project you will learn about models of concurrency, static verification (type systems), and the Curry-Howard correspondence: a beautiful connection between static verification and logic. 
+        Interestingly, logic can provide a precise setting to reason about clients, servers, and their intended interactions. This project concerns [linear logic](https://en.wikipedia.org/wiki/Linear_logic), a type of logic that tracks resources used by processes, in which client-server interactions can be neatly represented. There are several seemingly related logical characterizations of client-server interactions using linear logic; the goal of this project is to study the most important characterizations and to compare their most relevant characteristics by means of examples. 
+
+
+        In this project you will learn about models of concurrency, static verification (type systems), and the Curry-Howard correspondence: a beautiful connection between static verification and logic. 
 See <https://www.jperez.nl/teaching/projects> for a list of suggested pointers. 
 
 
@@ -295,13 +297,13 @@ A written report, in the style of a scientific paper, that surveys in a self-con
             "name": "Jorge Pérez",
             "email": "j.a.perez@rug.nl"
         },
-        "short_description": "Learn to formally verify a classic concurrency scenario using logic",
+        "short_description": "Learn to formally verify a classic concurrency scenario using logic!",
         "long_description": "
 This project concerns formal languages able to express concurrency, in the form of processes that execute simultaneously and interact with each other by exchanging messages. In particular, we are interested in APCP, a formal language in which message-passing processes implement protocols. In prior research, we have determined the formal conditions under which programs in APCP execute their protocols without running into a deadlock: the situation in which a program is stuck waiting for a message that will never arrive. We have used [linear logic](https://en.wikipedia.org/wiki/Linear_logic), a type of logic that tracks resources used by APCP processes, to ensure freedom from deadlocks.
 
-We have already demonstrated the power of APCP in different scenarios that involve concurrency. The goal of this project is to complement this work by developing an APCP program that implements a solution to [Dijkstra's Dining Philosophers problem](https://en.wikipedia.org/wiki/Dining_philosophers_problem), one of the most famous problems in concurrent programming. Concretely, in this project you will use APCP to implement a solution to the problem based on a resource hierarchy. That is, you will develop an implementation of the dining philosophers that exploits concurrent synchronizations and prove that it never runs into deadlocks. 
+        We have already demonstrated the power of APCP in different scenarios that involve concurrency. The goal of this project is to complement this work by developing an APCP program that implements a solution to [Dijkstra's Dining Philosophers problem](https://en.wikipedia.org/wiki/Dining_philosophers_problem), one of the most famous problems in concurrent programming. Concretely, in this project you will use APCP to implement a solution to the problem based on a resource hierarchy. That is, you will develop an implementation of the dining philosophers that exploits concurrent synchronizations and prove that it never runs into deadlocks. 
 
-In this project you will learn about models of concurrency, static verification (type systems), and the Curry-Howard correspondence: a beautiful connection between static verification and logic. 
+        In this project you will learn about models of concurrency, static verification (type systems), and the Curry-Howard correspondence: a beautiful connection between static verification and logic. 
 See <https://www.jperez.nl/teaching/projects> for a list of suggested pointers.
 
 
@@ -320,13 +322,13 @@ A written report, in the style of a scientific paper, that presents your verifie
             "name": "Jorge Pérez",
             "email": "j.a.perez@rug.nl"
         },
-        "short_description": "Learn to formally reason about resource usage in concurrency using types and logic",
+        "short_description": "Learn to formally reason about resource usage in concurrency using types and logic!",
         "long_description": "
 This project concerns formal languages able to express concurrency, in the form of processes that execute simultaneously and interact with each other by exchanging messages. In particular, we are interested in APCP, a formal language in which message-passing processes implement protocols. These protocols are specified using session types, which describe structures of intended communication. Communication in APCP is asynchronous: a data structure called buffers is used to store messages that have been sent but not yet received. 
 
-Prior work by Gay and Vasconcelos (for a language similar to APCP) showed that one can obtain an upper bound on the necessary size of the buffers (see [here](https://www.di.fc.ul.pt/~vv/papers/gay.vasconcelos_linear-sessions.pdf)). Intuitively, the idea is to examine the intended protocol, and to derive an upper bound for a buffer using the protocol’s size. This informally means that a protocol with n message exchanges will require a larger buffer than the one needed to implement a protocol with k message exchanges, for any k < n. The goal of this project is to adapt the argument by Gay and Vasconcelos to the case of APCP. This entails studying the definitions and proofs by Gay and Vasconcelos and to check whether/how they apply to the case of APCP, in which session types are closely related to [linear logic](https://en.wikipedia.org/wiki/Linear_logic), a type of logic that tracks resources used by processes. 
+        Prior work by Gay and Vasconcelos (for a language similar to APCP) showed that one can obtain an upper bound on the necessary size of the buffers (see [here](https://www.di.fc.ul.pt/~vv/papers/gay.vasconcelos_linear-sessions.pdf)). Intuitively, the idea is to examine the intended protocol, and to derive an upper bound for a buffer using the protocol’s size. This informally means that a protocol with n message exchanges will require a larger buffer than the one needed to implement a protocol with k message exchanges, for any k < n. The goal of this project is to adapt the argument by Gay and Vasconcelos to the case of APCP. This entails studying the definitions and proofs by Gay and Vasconcelos and to check whether/how they apply to the case of APCP, in which session types are closely related to [linear logic](https://en.wikipedia.org/wiki/Linear_logic), a type of logic that tracks resources used by processes. 
 
-In this project you will learn about models of concurrency, static verification (type systems), and the Curry-Howard correspondence: a beautiful connection between static verification and logic. 
+        In this project you will learn about models of concurrency, static verification (type systems), and the Curry-Howard correspondence: a beautiful connection between static verification and logic. 
 See <https://www.jperez.nl/teaching/projects> for a list of suggested pointers.
 
 
