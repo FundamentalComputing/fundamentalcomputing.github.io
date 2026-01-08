@@ -625,6 +625,7 @@ In real-world decision-making, multiple actors often have to make decisions on m
 
 The main references are [2] and [3]. Reference [1] (sections 1 and 2) can be consulted for more details and motivation.
 
+        
 References:
 
 1. Boutilier C, Brafman RI, Domshlak C, Hoos HH, Poole D (2004) CP-nets: A tool for representing and reasoning with conditional ceteris paribus preference statements. J. Artif. Intell. Res. 21:135–191, URL https://doi.org/10.1613/jair.1234
@@ -654,23 +655,23 @@ Modal logic is an extension of propositional logic which can express properties 
 
  The aim of this project will be to implement the cut-elimination procedure for the cyclic proof system GKe, and analyse its complexity. It is part of the project to select a suitable programming language/platform. Options include Rascal [3], the Cyclist prover framework [4], or a high-level language like Haskell. For earlier student projects that used Rascal to implement formal proofs, see [5-6]. To carry out this project, the student would need to study paper [1] in detail and construct cyclic proofs that can be used as input for the cut-elimination procedure. This project is therefore suited for students who have a strong interest in logic.
 
+
 References:
 
-1. [Bahareh Afshari and Johannes Kloibhofer. Cut elimination for Cyclic Proofs: A Case Study in Temporal Logic. Proceedings of Fixpoints in Computer Science, 2024.](https://arxiv.org/abs/2405.01935)
+1. Bahareh Afshari and Johannes Kloibhofer. Cut elimination for Cyclic Proofs: A Case Study in Temporal Logic. Proceedings of Fixpoints in Computer Science, 2024. [link](https://arxiv.org/abs/2405.01935)
  
-2. Abhishek De and Iris van der Giessen. Introduction to Proof Theory. Lecture notes for Midlands Graduate School 2024.
-<https://www.irif.fr/_media/users/ade/intro-prf-theory.pdf>
+2. Abhishek De and Iris van der Giessen. Introduction to Proof Theory. Lecture notes for Midlands Graduate School 2024. [link](https://www.irif.fr/_media/users/ade/intro-prf-theory.pdf)
  
-3. [Paul Klint, Tijs van der Storm, and Jurgen Vinju. Rascal: A domain specific language for source code analysis and manipulation. Ninth IEEE International Working Conference on Source Code Analysis and Manipulation, 2009.](https://doi.org/10.1109/SCAM.2009.28), 
+3. Paul Klint, Tijs van der Storm, and Jurgen Vinju. Rascal: A domain specific language for source code analysis and manipulation. Ninth IEEE International Working Conference on Source Code Analysis and Manipulation, 2009. [link](https://doi.org/10.1109/SCAM.2009.28), 
 <https://www.rascal-mpl.org/>
  
-4. [James Brotherston, Nikos Gorogiannis and Rasmus L. Petersen. A Generic Cyclic Theorem Prover. Proceedings of APLAS 2012.](https://link.springer.com/chapter/10.1007/978-3-642-35182-2_25)
+4. James Brotherston, Nikos Gorogiannis and Rasmus L. Petersen. A Generic Cyclic Theorem Prover. Proceedings of APLAS 2012. [link](https://link.springer.com/chapter/10.1007/978-3-642-35182-2_25)
 Also available here: <http://www0.cs.ucl.ac.uk/staff/J.Brotherston/APLAS12/cyclist.pdf>,
 <https://www.cyclist-prover.org/>
  
-5. [Chris Worthington. Proof Transformations for Game Logic. BSc thesis, Computing Science, UG, 2021.](https://fse.studenttheses.ub.rug.nl/25673/)
+5. Chris Worthington. Proof Transformations for Game Logic. BSc thesis, Computing Science, UG, 2021. [link](https://fse.studenttheses.ub.rug.nl/25673/)
  
-6. [Steven J. van Schagen. Game Logic: A Proof Transformation from Gentzen to Hilbert. BSc Thesis, Computing Science, UG, 2022.](https://fse.studenttheses.ub.rug.nl/28264/)
+6. Steven J. van Schagen. Game Logic: A Proof Transformation from Gentzen to Hilbert. BSc Thesis, Computing Science, UG, 2022. [link](https://fse.studenttheses.ub.rug.nl/28264/)
 
 ",
         "tags": ["logic", "implementation", "algorithms"],
