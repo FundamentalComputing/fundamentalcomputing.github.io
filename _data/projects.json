@@ -627,11 +627,11 @@ The main references are [2] and [3]. Reference [1] (sections 1 and 2) can be con
 
 References:
 
-[1] Boutilier C, Brafman RI, Domshlak C, Hoos HH, Poole D (2004) CP-nets: A tool for representing and reasoning with conditional ceteris paribus preference statements. J. Artif. Intell. Res. 21:135–191, URL https://doi.org/10.1613/jair.1234
+1. Boutilier C, Brafman RI, Domshlak C, Hoos HH, Poole D (2004) CP-nets: A tool for representing and reasoning with conditional ceteris paribus preference statements. J. Artif. Intell. Res. 21:135–191, URL https://doi.org/10.1613/jair.1234
 
-[2] Rossi, F., Venable, K. B., and Walsh, T. (2004). mCP nets: Representing and reasoning with preferences of multiple agents. In AAAI, volume 4, pages 729–734.
+2. Rossi, F., Venable, K. B., and Walsh, T. (2004). mCP nets: Representing and reasoning with preferences of multiple agents. In AAAI, volume 4, pages 729–734.
 
-[3] Haret, A., Novaro, A., & Grandi, U. (2018). Preference Aggregation with Incomplete CP-Nets. In 16th International Conference on Principles of Knowledge Representation and Reasoning (KR 2018) (pp. 308-317). AAAI Press, Palo Alto, California.
+3. Haret, A., Novaro, A., & Grandi, U. (2018). Preference Aggregation with Incomplete CP-Nets. In 16th International Conference on Principles of Knowledge Representation and Reasoning (KR 2018) (pp. 308-317). AAAI Press, Palo Alto, California.
 ",
         "tags": ["algorithms", "implementation"],
         "category": "BSc",
@@ -656,26 +656,21 @@ Modal logic is an extension of propositional logic which can express properties 
 
 References:
 
-[1] Bahareh Afshari and Johannes Kloibhofer. Cut elimination for Cyclic Proofs: A Case Study in Temporal Logic. Proceedings of Fixpoints in Computer Science, 2024.
-<https://arxiv.org/abs/2405.01935>
+1. [Bahareh Afshari and Johannes Kloibhofer. Cut elimination for Cyclic Proofs: A Case Study in Temporal Logic. Proceedings of Fixpoints in Computer Science, 2024.](https://arxiv.org/abs/2405.01935)
  
-[2] Abhishek De and Iris van der Giessen. Introduction to Proof Theory. Lecture notes for Midlands Graduate School 2024.
+2. Abhishek De and Iris van der Giessen. Introduction to Proof Theory. Lecture notes for Midlands Graduate School 2024.
 <https://www.irif.fr/_media/users/ade/intro-prf-theory.pdf>
  
-[3] Paul Klint, Tijs van der Storm, and Jurgen Vinju. Rascal: A domain specific language for source code analysis and manipulation. Ninth IEEE International Working Conference on Source Code Analysis and Manipulation, 2009.
-<https://doi.org/10.1109/SCAM.2009.28>, 
+3. [Paul Klint, Tijs van der Storm, and Jurgen Vinju. Rascal: A domain specific language for source code analysis and manipulation. Ninth IEEE International Working Conference on Source Code Analysis and Manipulation, 2009.](https://doi.org/10.1109/SCAM.2009.28), 
 <https://www.rascal-mpl.org/>
  
-[4] James Brotherston, Nikos Gorogiannis and Rasmus L. Petersen. A Generic Cyclic Theorem Prover. Proceedings of APLAS 2012.
-<https://link.springer.com/chapter/10.1007/978-3-642-35182-2_25>
+4. [James Brotherston, Nikos Gorogiannis and Rasmus L. Petersen. A Generic Cyclic Theorem Prover. Proceedings of APLAS 2012.](https://link.springer.com/chapter/10.1007/978-3-642-35182-2_25)
 Also available here: <http://www0.cs.ucl.ac.uk/staff/J.Brotherston/APLAS12/cyclist.pdf>,
 <https://www.cyclist-prover.org/>
  
-[5] Chris Worthington. Proof Transformations for Game Logic. BSc thesis, Computing Science, UG, 2021.
-<https://fse.studenttheses.ub.rug.nl/25673/>
+5. [Chris Worthington. Proof Transformations for Game Logic. BSc thesis, Computing Science, UG, 2021.](https://fse.studenttheses.ub.rug.nl/25673/)
  
-[6] Steven J. van Schagen. Game Logic: A Proof Transformation from Gentzen to Hilbert. BSc Thesis, Computing Science, UG, 2022.
-<https://fse.studenttheses.ub.rug.nl/28264/>
+6. [Steven J. van Schagen. Game Logic: A Proof Transformation from Gentzen to Hilbert. BSc Thesis, Computing Science, UG, 2022.](https://fse.studenttheses.ub.rug.nl/28264/)
 
 ",
         "tags": ["logic", "implementation", "algorithms"],
