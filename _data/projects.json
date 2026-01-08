@@ -634,7 +634,7 @@ References:
 
 3. Haret, A., Novaro, A., & Grandi, U. (2018). Preference Aggregation with Incomplete CP-Nets. In 16th International Conference on Principles of Knowledge Representation and Reasoning (KR 2018) (pp. 308-317). AAAI Press, Palo Alto, California [[link]](https://cdn.aaai.org/ocs/18069/18069-78652-1-PB.pdf)
 ",
-        "tags": ["algorithms", "implementation"],
+        "tags": [ "modelling", "implementation", "algorithms"],
         "category": "BSc",
         "available": 1
     },
