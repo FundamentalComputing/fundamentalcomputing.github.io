@@ -1,75 +1,198 @@
 [
     {
-        "title": "A survey of graph parameters and their comparison",
+        "title": "Exploring Study of Real-World Sports Tournaments",
         "supervisor": {
             "name": "Ivan Bliznets",
             "email": "i.bliznets@rug.nl"
         },
-        "short_description": "Explore the intricate world of graph parameters and their relationships, from treewidth to vertex cover, to gain deeper insights into algorithmic complexity.",
+        "short_description": "Study of Real-World Sports Tournaments",
         "long_description": "
-Graphs are the backbone of computer science, and they are everywhere! They are used to model a wide variety of real-world problems, including social networks, transportation networks, and communication networks. Graphs have many parameters that describe their complexity and structure, and these parameters can be used to gain insights into the underlying problem. The simplest such parameters are the number of vertices and the number of edges, but there are more involved parameters like treewidth. This parameter describes how significantly a graph is different from a tree (see the <a href=\"https://en.wikipedia.org/wiki/Treewidth\" target=\"_blank\">Wikipedia page for Treewidth</a> for more details). There are many other parameters like pathwidth, cliquewidth, twinwidth, vertex cover, neighborhood diversity, and so on.  All these parameters can be used to gain a deeper understanding of how hard a particular problem is on a given graph.
+**Who Is This For?** Are you a fan of football, basketball, volleyball, or any other popular sport? Do you enjoy analyzing game outcomes from a mathematical or computational perspective? If so, this project is for you.
 
 
-The goal of the proposed project is to survey and study relations between different parameters describing graphs. For example, it is well known that the pathwidth parameter is never smaller than a treewidth. It is expected that this kind of relations will be surveyed or discovered in the project. Also you will be exploring different graph parameters from the viewpoint of algorithms and discrete mathematics. The project is an exciting opportunity to dive deep into the world of graphs and algorithms.
+**Inspiration & Motivation** This project is inspired by the article: [“How to Make Knockout Tournaments More Popular?”](https://arxiv.org/pdf/2309.09967) (Juhi Chaudhary, Hendrik Molter, and Meirav Zehavi). The article raises fascinating questions about tournament design and optimization.
 
 
-If you want to know more about treewidth you can watch <a href=\"https://www.youtube.com/watch?v=kEnDGTwSDXY\" target=\"_blank\">this video</a> (understanding all material in the video is NOT necessary)
+**What You’ll Explore**
 
-This project is intended for students interested in graphs.",
-        "tags": ["algorithms", "graphs"],
+- Tournament Optimization: How can we organize games (e.g., for the FA Cup) to maximize revenue, using data from previous seasons (such as the Premier League or other leagues)?
+
+- Generalization: Can these insights be applied to tournaments in other countries or sports?
+
+- Predictability: How predictable are results in certain sports leagues? Can we efficiently compute such predictions in general?
+
+
+**Project Goals**
+Investigate the practical application of theoretical results from the article.
+Analyze real-world data to assess the predictability of tournament outcomes.
+Develop or adapt computational models to optimize tournament structures.
+",
+        "tags": ["algorithms", "prediction", "modelling", "tournaments"],
         "category": "BSc",
-        "available": 2
+        "available": 3
+    },
+    {
+        "title": "Exploring Price Reversion Strategies in Financial Markets",
+        "supervisor": {
+            "name": "Ivan Bliznets",
+            "email": "i.bliznets@rug.nl"
+        },
+        "short_description": "Exploring Price Reversion Strategies in Financial Markets",
+        "long_description": "
+**Why This Project?**
+This project is ideal for anyone fascinated by financial markets and interested in testing quantitative trading strategies. Price reversion—also known as mean reversion—is a classic approach used by traders to capitalize on short-term price fluctuations.
+
+
+**What You’ll Do**
+You’ll investigate the effectiveness of a simple price reversion strategy, which operates on the following principles:
+
+- Buy stocks that have decreased in value compared to their price one week ago.
+
+- Sell or short stocks that have increased in value compared to their price one week ago.
+
+
+
+**Key Activities**
+
+- Data Collection: Scrape or source historical market data in a format suitable for analysis.
+
+- Market Simulation: Model historical market conditions to test the strategy’s performance.
+
+- Strategy Analysis: Evaluate the effectiveness and risks of basic price-reversion approaches.
+",
+        "tags": ["markets", "implementation", "data scraping"],
+        "category": "BSc",
+        "available": 1
+    },
+    {
+        "title": "Survey of Classical Graph Problems Solvable Faster than Brute Force",
+        "supervisor": {
+            "name": "Ivan Bliznets",
+            "email": "i.bliznets@rug.nl"
+        },
+        "short_description": "",
+        "long_description": "
+**Who Is This For?**
+This project is perfect for students passionate about graph theory, algorithms, or computational complexity. If you’re intrigued by the challenge of tackling NP-complete problems and discovering clever algorithmic solutions, this is your opportunity to dive deep.
+
+
+**Project Overview**
+You’ll explore classical graph-based NP-complete problems, as cataloged in the seminal work: “Computers and Intractability: A Guide to the Theory of NP-Completeness” by Michael Garey and David S. Johnson.
+
+
+**Key Activities**
+
+- Identify graph problems from the book that can be solved faster than brute force.
+
+- Investigate existing algorithms in the literature, or design your own innovative approaches.
+
+- Describe, simplify, or enhance these algorithms, contributing to the understanding of efficient solutions for NP-complete problems.
+
+By the end of the project, you’ll have a comprehensive survey of graph problems with non-trivial algorithmic solutions, potentially uncovering new insights or optimizations
+",
+        "tags": ["algorithms", "graphs", "complexity"],
+        "category": "BSc",
+        "available": 1
     },
 
     {
-        "title": "NP-complete number theoretical problems",
+        "title": "Survey of Classical Non-Graph-Based Problems Solvable Faster than Brute Force",
         "supervisor": {
             "name": "Ivan Bliznets",
             "email": "i.bliznets@rug.nl"
         },
-        "short_description": "Discover if problems involving number theoretical aspects, like covering arrays with arithmetic progressions, exhibit similar complexity shifts when transitioning from integer to rational inputs.",
+        "short_description": "Survey of Classical Non-Graph-Based Problems Solvable Faster than Brute Force",
         "long_description": "
-Subset sum, knapsack, and partition are well-known problems in computer science. These problems involve a list of numbers as input. If the input contains only integer numbers, these problems are weakly NP-complete and admit pseudo polynomial algorithms. However, if the input contains rational numbers given by the denominator and numerator, these problems become strongly NP-complete.
+**Who Is This For?**
+ This project is perfect for students passionate about algorithms, or computational complexity. If you’re intrigued by the challenge of tackling NP-complete problems and discovering clever algorithmic solutions, this is your opportunity to dive deep.
 
 
-The goal of this project is to investigate whether other “number theoretical” NP-complete problems have similar behavior. One such problem is the problem of covering the input array by the smallest number of arithmetic progressions. It is known that this problem is weakly NP-complete if the input contains only integer numbers. The proof of this result and other details can be found in [this paper](https://www.sciencedirect.com/science/article/abs/pii/002001909090013N).
+**Project Overview**
+ You’ll explore classical non-graph-based NP-complete problems, as cataloged in the seminal work: “Computers and Intractability: A Guide to the Theory of NP-Completeness” by Michael Garey and David S. Johnson.
 
 
-For additional information on this topic see [this paper](https://arxiv.org/abs/1802.09465).
+**Key Activities**
 
+- Identify non-graph problems from the book that can be solved faster than brute force.
 
-This project is intended for students interested in algorithms, NP-completeness and introductory number theory.
+- Investigate existing algorithms in the literature, or design your own innovative approaches.
+
+- Describe, simplify, or enhance these algorithms, contributing to the understanding of efficient solutions for NP-complete problems.
 ",
         "tags": ["algorithms", "complexity"],
         "category": "BSc",
         "available": 1
     },
 
+
     {
-        "title": "Interplay of number theory and fixed-parameter tractable algorithms",
+        "title": "How good are LLMs at finding graph parameters? ",
         "supervisor": {
             "name": "Ivan Bliznets",
             "email": "i.bliznets@rug.nl"
         },
-        "short_description": "Explore the potential of parameterized complexity to design efficient algorithms for computationally hard number theory problems, focusing on identifying problems with real-world parameters that allow for efficient solutions.",
+        "short_description": "",
         "long_description": "
-Parameterized complexity is a promising approach to tackle computationally hard problems. So far, fixed-parameter tractable algorithms have been designed mainly for graph problems. The goal of this project is to study the possibility of the application of fixed-parameter tractable machinery to the construction of efficient algorithms for computationally hard problems from basic number theory.
+Graphs are the backbone of computer science, and they are everywhere! They are used to model a wide variety of real-world problems, including social networks, transportation networks, and communication networks. Graphs have many parameters that describe their complexity and structure, and these parameters can be used to gain insights into the underlying problem. The simplest such parameters are the number of vertices and the number of edges, but there are more involved parameters like treewidth. This parameter describes how significantly a graph is different from a tree (more details can be found here: <https://en.wikipedia.org/wiki/Treewidth>). There are many other parameters like pathwidth, cliquewidth, twinwidth, vertex cover, neighborhood diversity, and so on.  All these parameters can be used to gain a deeper understanding of how hard a particular problem is on a given graph.
 
+The goal of the proposed project is to investigate how LLMs are good in finding values of such parameters on small graphs.  
 
-The project starts with a study of basic notions and definitions of fixed-parameter tractable algorithms. The final goal of the project is to survey  NP-complete problems involving integer numbers that might have small parameters (some characteristics) in real-world instances. For example, in the CAP problem, an input consists of a set of integer numbers, and the goal is to cover all these numbers using the smallest number of arithmetic progressions that do not include other integers. It is natural to assume that, in real life, we are interested in answers only if the number of arithmetic progressions is small. Under such parameterization, CAP admits an efficient algorithm (the problem has a fixed-parameter tractable algorithm), even though the general case of CAP is NP-complete.
-
-
-During the project, your goal is to identify problems from basic number theory that are interesting from the point of view of fixed-parameter tractable algorithms.
-
-Literature:
-
-  - Basics of parameterized algorithms: Chapters 1 and 3 in the book \"Parameterized Algorithms\", available [here](https://www.mimuw.edu.pl/~malcin/book/parameterized-algorithms.pdf)
-
-  - [List of NP-complete problems](https://en.wikipedia.org/wiki/List_of_NP-complete_problems)
+If you want to know more about treewidth you can watch the following video <https://www.youtube.com/watch?v=kEnDGTwSDXY> (understanding all material in the video is NOT necessary)
 ",
-        "tags": ["algorithms", "complexity"],
+        "tags": ["algorithms", "graphs", "LLMs", "graph parameters"],
         "category": "BSc",
-        "available": 2
+        "available": 1
+    },
+
+    {
+        "title": "Exploring the Frontiers of Graph Coloring",
+        "supervisor": {
+            "name": "Ivan Bliznets",
+            "email": "i.bliznets@rug.nl"
+        },
+        "short_description": "Colorability and Choosability",
+        "long_description": "
+The chromatic number is a classic NP-complete problem: given a graph, what’s the minimum number of colors needed to color its vertices so that no two adjacent vertices share the same color? This question is deeply connected to the famous Four Color Theorem. List coloring and choosability are intriguing generalizations of this problem, offering rich avenues for research.
+
+
+**What You’ll Do:**
+ In this project, you’ll dive into the world of graph coloring, with a focus on:
+
+- Surveying Known Results: Review and synthesize existing literature on chromatic number, list coloring, and choosability.
+
+- Testing Hypotheses: Investigate open questions, such as: Is it true that any 3-choosable graph is (6,2)-choosable? (see [this video](https://www.youtube.com/watch?v=E1t6Rx71aio))
+
+- Empirical Exploration: Test hypotheses on small graphs or within specific graph classes, potentially uncovering new patterns or counterexamples.
+",
+        "tags": ["algorithms", "graphs", "graph coloring"],
+        "category": "BSc",
+        "available": 1
+    },
+
+    {
+        "title": "Covering by Arithmetic Progressions",
+        "supervisor": {
+            "name": "Ivan Bliznets",
+            "email": "i.bliznets@rug.nl"
+        },
+        "short_description": "",
+        "long_description": "
+The *Covering by Arithmetic Progression* problem asks: given a set of natural numbers, what is the smallest number of arithmetic progressions needed to cover all elements? This problem arises naturally in timetabling and scheduling/ For more details, see the recent article: [“Covering by Arithmetic Progressions”](https://arxiv.org/pdf/2312.06393).
+
+
+**Project Overview**
+
+- Bring known algorithms to life by coding them up.
+
+- Test their performance on a variety of input data.
+
+- Propose and develop heuristics to improve efficiency.
+
+- Assess the practical effectiveness of your solutions.
+",
+        "tags": ["algorithms", "implementaion", "heuristics"],
+        "category": "BSc",
+        "available": 1
     },
 
     {
@@ -78,10 +201,11 @@ Literature:
             "name": "Ivan Bliznets",
             "email": "i.bliznets@rug.nl"
         },
-        "short_description": "Design and implement a branch-and-bound algorithm for the Partial Minimum Satisfiability problem, tackling the challenge of finding satisfying assignments while minimizing the number of satisfied clauses.",
+        "short_description": "Constructing an exact exponential algorithm for the Partial Minimum Satisfiability problem",
         "long_description": "
-The Partial Minimum Satisfiability problem involves a CNF formula F, where some of the clauses are marked as hard clauses. The goal is to find a satisfying assignment that satisfies all hard clauses and the smallest number of other clauses. The length of the formula is defined as the number of literals in the formula. The objective of this project is to construct an algorithm for the Partial Minimum Satisfiability problem, with the running time measured in terms of the length of the formula or in terms of the overall number of variables and clauses. The algorithm will most likely be a branch-and-bound algorithm. You can find details about branching algorithms in Chapter 2 of the book [Exact Exponential Algorithms](https://folk.uib.no/nmiff/BookEA/BookEA.pdf).
 
+The Partial Minimum Satisfiability problem involves a CNF formula F, where some of the clauses are marked as hard clauses. The goal is to find a satisfying assignment that satisfies all hard clauses and the smallest number of other clauses. The length of the formula is defined as the number of literals in the formula. The objective of this project is to construct an algorithm for the Partial Minimum Satisfiability problem, with the running time measured in terms of the length of the formula or in terms of the overall number of variables and clauses. The algorithm will most likely be a branch-and-bound algorithm.
+You can find details about branching algorithms in Chapter 2 of the book [Exact Exponential Algorithms](https://folk.uib.no/nmiff/BookEA/BookEA.pdf).
 
 This project will introduce you to exact exponential algorithms and basic techniques for designing such algorithms. You will also have the opportunity to construct your own algorithm for the Partial Minimum Satisfiability problem. Good luck!
 
@@ -94,36 +218,9 @@ Literature:
 ",
         "tags": ["algorithms"],
         "category": "BSc",
-        "available": 2
-    },
-
-    {
-        "title": "Minimal Connected Tropical Sets",
-        "supervisor": {
-            "name": "Ivan Bliznets",
-            "email": "i.bliznets@rug.nl"
-        },
-        "short_description": "Uncover the fascinating relationship between connected tropical sets and interval graphs by exploring the number of minimal connected tropical sets within these structured graph types, aiming for both exact calculations in small cases and generalized bounds for larger instances.",
-        "long_description": "
-Suppose the vertices of a graph G are colored. We define a subset of vertices as a connected tropical set if it generates a connected graph that contains vertices of all colors from the original graph. A subset of vertices is a Minimal Connected Tropical Set if it is a Connected Tropical Set and it does not contain a smaller set that is also a Connected Tropical Set.
-
-
-A graph is called an interval graph if we can assign intervals on the line to all vertices such that two vertices are adjacent if and only if corresponding intervals intersect.
-
-
-The objective of this project is to investigate the number of minimal connected tropical sets in interval graphs. We aim to find the exact values of the number of minimal connected tropical sets in small interval graphs using computational resources. We also try to generalize our findings to interval graphs of arbitrary size by providing lower bounds or upper bounds on their value.
-
-
-Below you can find literature that is relevant to this project:
-
--    [Enumerating Minimal Tropical Connected Set](https://link.springer.com/chapter/10.1007/978-3-319-51963-0_17)
-
--    [Enumeration of Minimal Tropical Connected Sets](https://link.springer.com/chapter/10.1007/978-3-031-30448-4_10)
-",
-        "tags": ["algorithms", "graphs"],
-        "category": "BSc",
         "available": 1
     },
+
 
     {
         "title": "Theory and Practice of Bidirectional Typechecking",
@@ -143,11 +240,14 @@ One class of algorithms for implementing type systems are based on bidirectional
 
 
 The goal of this project is to study bidirectional type checking and implementing one of the algorithms in your favorite programming language.
+If you enjoyed the courses on functional programming or the elective course on compiler construction and semantics, then this project might be for you!
 
 
-If you enjoyed the courses on functional programming or the elective course on compiler construction, then this project might be for you!
+Additional reading:
 
-Additional reading: [Bidirectional Typing Rules: A Tutorial](https://davidchristiansen.dk/tutorials/bidirectional.pdf) and [Lecture Notes on Bidirectional Typechecking](https://www.cs.cmu.edu/~fp/courses/15312-f04/handouts/15-bidirectional.pdf)
+- [Bidirectional Typing Rules: A Tutorial](https://davidchristiansen.dk/tutorials/bidirectional.pdf), and
+
+- [Lecture Notes on Bidirectional Typechecking](https://www.cs.cmu.edu/~fp/courses/15312-f04/handouts/15-bidirectional.pdf)
 ",
         "tags": ["type systems", "programming languages"],
         "category": "BSc",
@@ -160,7 +260,7 @@ Additional reading: [Bidirectional Typing Rules: A Tutorial](https://davidchrist
             "name": "Dan Frumin",
             "email": "d.frumin@rug.nl"
         },
-        "short_description": "",
+        "short_description": "Theoretical and pratical improvements to the proof checker.",
         "long_description": "
 FitchVIZIER is a proof checker for Fitch-style proofs written in Rust and used in the course \"Introduction to Logic\" in the CS and AI programs.
 This project concerns possible improvements and extensions, raging from mostly practical to mostly theoretical.
@@ -257,9 +357,28 @@ Some relevant reading:
             "name": "Dan Frumin",
             "email": "d.frumin@rug.nl"
         },
-        "short_description": ".",
-        "long_description": "....",
-        "tags": ["type theory", "functional programming"],
+        "short_description": "What is gradual typing and what kind of guarantees does it offer?",
+        "long_description": "
+Gradual typing bridges the gap between fully static typing (in languages like Java or Haskell) and fully dynamic languages (like Python or JavaScript), by allowing the programmer to mix typed and untyped code in the same project (similar to the TypeScript approach).
+This additional flexebility allows programmers to develop the programs in a dynamically-typed programming language and add type annotations to some crucial parts wihle leaving other parts untyped.
+
+It is precisely the interaction between the typed and untyped parts of the code that raises an important question: what kind of guarantees does a gradually typed program provide?
+Intuitively, we want to say that if a gradually typed program raises a type error, than that type error has to come from an untyped part. But what does this mean specifically? In presnse of higher-order constructs like first-class functions or objects it is suprisingly tricky to formulate this precisely.
+
+In this project you will investigate both theoretical and practical aspects of grdual typing, including imporant concepts like cast semantics, implicing casting, and the blame tracking.
+
+The project is suitable for people  interested in type systems, as they are covered in classes on functional programming, compiler construction, and semantics.
+
+
+Primary reading:
+
+- [What is Gradual Typing?](https://jsiek.github.io/home/WhatIsGradualTyping.html)
+
+- [Gradual Typing for Functional Languages](http://scheme2006.cs.uchicago.edu/13-siek.pdf)
+
+- [Gradual Typing for Objects](https://link.springer.com/chapter/10.1007/978-3-540-73589-2_2)
+",
+        "tags": ["type theory", "logic"],
         "category": "BSc",
         "available": 1
     },
@@ -345,51 +464,220 @@ A written report, in the style of a scientific paper, that presents your formal 
     },
 
 
-
     {
-        "title": "Well-quasi-orderings in computer science and their upper bounding",
+        "title": "Reduction-Based Lower Bounds and Undecidability in Logic",
         "supervisor": {
             "name": "Revantha Ramanayake",
             "email": "d.r.s.ramanayake@rug.nl"
         },
-        "short_description": "...",
-        "long_description": "Let N be the set of natural numbers {0, 1, 2, .. }. Consider the binary relation <= on N^2 = { (x,y) | x ∈ N and y ∈ N } defined as:
+        "short_description": "",
+        "long_description": "
+A fundamental task in logic and theoretical computer science is to understand the computational difficulty of logical decision problems such as satisfiability, validity, and provability. These difficulties are usually established via reductions from hard computational problems. Depending on the problem under consideration, the reduction yields either a computational complexity lower bound, or undecidability.
 
 
-(a1, b1) <= (a2, b2) iff a1 <= a2 and b1 <= b2
+The aim of this project is to survey reduction-based lower bounding techniques for non-classical logics, including substructural, intermediate, and modal logics. In each case, one starts from a computational problem whose difficulty is known, and encodes its computations into a logical system.
 
 
-For example, (2, 2) <= (3, 3) but (2,2) and (3, 1) are incomparable under <=. It is easy to see that <= is reflexive and transitive i.e., it is a quasi-order.
+The aim of this project is to survey and illustrate key reduction techniques used in the study of non-classical logics, with a focus on:
+
+- Substructural logics (e.g. fragments of linear and relevant logic)
+
+- Intermediate logics (between intuitionistic and classical logic)
+
+- Modal logics.
 
 
-A bad sequence is a sequence a0, a1, a2, .. of elements from N^2 with the property that there is no increasing pair i.e. there is no i,j with i < j such that ai <= aj. An example of a bad sequence is (2,2), (3,1), (1,1), (0,1). However, (2,2), (1,3),(3,2) is not a bad sequence since it contains an increasing pair (2,2) <= (3,2). 
+The project will examine how well-known hard problems—such as counter machine reachability, tiling problems, and quantified Boolean formulas—are reduced to logical decision problems. Particular emphasis will be placed on clearly explaining:
+
+- the computational problem used for the reduction
+
+- the logical system under study
+
+- how the problem is encoded in the logic (i.e., the reduction)
 
 
-It is easy to see that a bad sequence on N is finite since it would have to be a strictly descending sequence (e.g. 7, 5, 3, 2, 1, 0). The existence of incomparable elements in N^2 under <= makes the situation more interesting. Nevertheless:
+Case studies include:
+
+- Counter machine encodings used to obtain undecidability and lower bounds for linear logic and fragments of substructural logics,
+
+- Reductions from TQBF establishing PSPACE-hardness for intuitionistic propositional logic,
+
+- Wang tiling–based arguments yielding hardness and undecidability results for relevant and modal logics.
 
 
-LEMMA. Every bad sequence on N^2 with respect to <= is finite. 
-
-(Can you prove it? What is an example of a set and ordering where infinite bad sequences exist?)
+The aim of this project is primarily expository: the student is not expected to prove new results, but to find suitable examples from the literature and present the arguments in a clear, accessible and systematic way, suitable for a reader with a background in logic and basic complexity theory. Additional topics to consider include a comparison of reduction techniques across different logical families, highlighting common patterns and differences; a focused case study on a single technique (e.g., counter machines or tilings) applied to several logics; an exploration of how lower bounds rely on properties of the logical proof system such as cut-elimination or subformula properties; and a brief discussion of open problems or gaps between known upper and lower bounds in specific logics. Depending on progress and interest, there may be scope to consider a research problem.
 
 
-A quasi-ordering <= such that every bad sequence is finite is called a well-quasi-ordering (wqo).
+This project can be seen as complementary to *The Computational Origins of Hardness for Canonical Problems*. While the present project studies how hard problems can be encoded into logical systems to obtain lower bounds and undecidability results, the companion project examines why these problems are hard, in terms of Turing machine computation.
 
 
-What is the maximum length of a bad sequence on N^2? It does not exist, since arbitrarily large jumps can be made e.g., (2,2), (1, 100), (1, 99), .. and hence arbitrarily long bad sequences can be found. However, if we restrict the size of a jump, e.g. \\|a_{I+1}\\| <= 2.\\|a_i\\| where \\|a\\| is the maximum value over the coordinates then it can be shown that a maximum length for bad sequences exists as a function of the starting element (can you prove it? can you compute its length under this doubling control?).
+This project is suitable for a student with an interest in the mathematical and theoretical foundations of computer science, particularly logic and complexity theory. Familiarity with propositional logic and computational complexity is assumed; prior exposure to non-classical logics is helpful but not required.The project is suitable for two students, who could divide the work between surveying complexity-theoretic lower bounds and surveying undecidability results, unified by a common focus on reductions from hard problems.
 
 
-RELATIONSHIP TO TCS: Suppose you want to show that an algorithm terminates. In many cases, the successive configurations of the algorithm can be represented as a bad sequence of some wqo. In such cases, the finiteness of the bad sequence guarantees termination, and the length of the bad sequence provides an upper bound.
+**References**:
+
+- Richard Statman: Intuitionistic Propositional Logic is Polynomial-Space Complete. Theor. Comput. Sci. 9: 67-72 (1979)
+
+- Alasdair Urquhart: The Complexity of Decision Procedures In Relevance Logic II. J. Symb. Log. 64(4): 1774-1802 (1999)
+",        
+        "tags": ["logic", "complexity"],
+        "available": 2,
+        "category": "BSc",
+    },
+
+    {
+        "title": "The Computational Origins of Hardness for Canonical Problems",
+        "supervisor": {
+            "name": "Revantha Ramanayake",
+            "email": "d.r.s.ramanayake@rug.nl"
+        },
+        "short_description": "",
+        "long_description": "
+Many lower-bound and undecidability results rely on a small collection of canonical computational problems whose difficulty is well understood. These problems are rarely arbitrary: they are carefully chosen abstractions of Turing machine computation, designed to preserve hardness while offering structures that are easier to manipulate and encode. This project focuses on understanding the computability/complexity properties of these source problems.
 
 
-In 2011, Figueira et al. gave an elementary and self-contained proof of sharp upper bounds for controlled bad sequences over N^k. The aim of this project is to survey the application of wqos in theoretical computer science and to survey their upper bound argument.
+The project will survey several foundational hard problems that commonly serve as starting points for reductions, including:
+
+- the Halting Problem and related undecidable decision problems for Turing machines
+
+- bounded Turing machine problems corresponding to standard complexity classes (in particular polynomial-space computation)
+
+- intermediate computational models such as counter machines, tiling systems, and string or term rewriting systems
 
 
-This topic is suited to a student who is interested in the mathematical aspects of computer science. The starting reference is the following.
 
-Diego Figueira, Santiago Figueira, Sylvain Schmitz, Philippe Schnoebelen: Ackermannian and Primitive-Recursive Bounds with Dickson's Lemma. ACM/IEEE Symposium on Logic in Computer Science LICS 2011: 269-278",
+For each case, the aim is to explain
+
+- the underlying computational model and how it relates to Turing machines,
+
+- how hardness or undecidability is established (without using prior reductions),
+
+- why the problem is a convenient and robust source for further reductions, and
+
+- how it connects to other canonical hard problems via simple simulations or reductions.
+
+
+The central goal of the project is to make explicit the computational lineage of lower-bound arguments: how undecidability and high complexity originate in Turing machine behaviour, and how this difficulty is preserved as one moves to higher-level or more structured problems. Particular attention should be paid to why certain problems—such as tiling or counter machines—are often preferred over Turing machines when serving as reduction sources. The student is expected to search the literature for relevant sources. The aim of this project is primarily expository: the student is not expected to prove new results.
+
+
+This project can be seen as complementary to the project *Reduction-Based Lower Bounds and Undecidability in Logic*. While the latter studies how computational hardness is encoded within logical systems, the present project focuses on the computational origins of that hardness and on the role of Turing machines as the foundational reference model.
+
+
+This project is suitable for a student interested in theoretical computer science and models of computation. Familiarity with Turing machines, decidability, and computational complexity is assumed.
+",
         "tags": ["logic", "complexity"],
         "available": 1,
         "category": "BSc",
     },
+
+    {
+        "title": "Approximate Circuit Design via Satisfiability Solving",
+        "supervisor": {
+            "name": "Rodrigo Otoni",
+            "email": "r.b.otoni@rug.nl"
+        },
+        "short_description": "Learn about logic synthesis and then design and implement an improvement to a framework for synthesising approximate circuits",
+        "long_description": "
+As energy efficiency has become a crucial concern, a new design paradigm called Approximate Computing (AC) has gained popularity. While traditionally one could sacrifice latency for energy efficiency, AC proposes to consider accuracy as a design axis, aiming to lower energy consumption at the cost of accuracy. This is well suited for error-resilient applications, where small losses in accuracy are not critical.
+
+
+This project will focus on the design of boolean circuits via Approximate Logic Synthesis (ALS) [1]. ALS is the process of automatically generating an approximate version of a circuit that respects an error threshold. The resulting circuit will be a modification of the original one, with parts substituted or even completely removed, and should have improvements in metrics such as energy consumption. Recent advances on ALS have exploited Satisfiability Modulo Theories (SMT) solvers [2]. These solvers provide heuristics to tackle the SMT problem [3], which is a generalisation of Boolean Satisfiability (SAT), the quintessential NP-complete problem.
+
+
+The aim of the project is to investigate improvements to the SMT-based approach described in [2], e.g., in terms of subcircuit selection and encoding. You will need a suitable understanding of logic and basic knowledge of gate-level design, in addition to good programming skills. The tasks will include (a) learning about one step of the framework, by reading the academic paper and the framework's documentation and codebase, (b) designing an alternative approach to complete the step, and (c) implementing the new approach in an experimental branch of the framework.
+
+
+The framework is implemented in Python and can be found on GitHub: <https://github.com/lp-rg/subxpat>
+
+
+References:
+
+- [1] I. Scarabottolo, G. Ansaloni, G. Constantinides, L. Pozzi, and S. Reda. Approximate Logic Synthesis: A Survey. Proceedings of the IEEE (Proc. IEEE), volume 108, issue 12, 2020. DOI: <https://doi.org/10.1109/JPROC.2020.3014430>
+
+- [2] M. Rezaalipour, M. Biasion, F. Costa, C. Tirelli, F. Ferretti, R. Otoni, G. Constantinides, and L. Pozzi. Approximate Logic Synthesis via Iterative SMT-based Subcircuit Rewriting. IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD), Early Access, 2025. DOI: <https://doi.org/10.1109/TCAD.2025.3638267>
+
+- [3] C. Barrett, C. Tinelli, H. Barbosa, A. Niemetz, M. Preiner, A. Reynolds, and Y. Zohar. Satisfiability Modulo Theories: A Beginner's Tutorial. Proceedings of the 26th International Symposium on Formal Methods (FM'24), 2024. DOI: <https://doi.org/10.1007/978-3-031-71177-0_31>
+",
+        "tags": ["logic", "synthesis", "implementation"],
+        "category": "BSc",
+        "available": 2
+    },
+
+    {
+        "title": "Web-based Tool for the Analysis of Multi-Actor Conditional Preferences",
+        "supervisor": {
+            "name": "Helle Hvid Hansen",
+            "email": "h.h.hansen@rug.nl"
+        },
+        "short_description": "Learn about multi-actor decision-making and create a web-based tool for building and computing with multi-actor conditional preferences. ",
+        "long_description": "
+In real-world decision-making, multiple actors often have to make decisions on multiple issues at the same time. In the presence of multiple issues and multiple actors with varying preferences, there is rarely one outcome that is optimal for all actors. Moreover, preferences over outcomes for an issue A may depend on the outcomes of other issues B and C. For single actors, such conditional preferences have been formalized with conditional preference networks (CP-nets) [1]. Multi-actor extensions and other generalizations have been studied in [2,3]. 
+
+
+  The aim of this project is to create a web-based tool that will support real-world case studies in complex decision-making using multi-actor CP-nets. The tool should (1) provide an interface for querying users (actors) for input that will be used to construct a CP-net, and (2) compute a number of aggregation metrics that can help identify outcomes that optimize various aspects of the group’s preferences .
+
+
+  Re (1): In the worst case, a CP-net specification requires a number of queries that is exponential in the number of issues, but in most (real-world) cases, the specification is much smaller due to few dependencies. Therefore the user input process should consist of a number of steps that allow to minimize the number of queries to the user. Moreover, the CP-net specifications should be stored in a database, and allow for some basic visualization of CP-nets.
+
+
+ It is part of the project to identify a suitable programming language and the setup for the web tool. Students can get access to descriptions of issues and CP-nets from a real-world case study.
+
+
+The main references are [2] and [3]. Reference [1] (sections 1 and 2) can be consulted for more details and motivation.
+
+- [1] Boutilier C, Brafman RI, Domshlak C, Hoos HH, Poole D (2004) CP-nets: A tool for representing and reasoning with conditional ceteris paribus preference statements. J. Artif. Intell. Res. 21:135–191, URL https://doi.org/10.1613/jair.1234
+
+- [2] Rossi, F., Venable, K. B., and Walsh, T. (2004). mCP nets: Representing and reasoning with preferences of multiple agents. In AAAI, volume 4, pages 729–734.
+
+- [3] Haret, A., Novaro, A., & Grandi, U. (2018). Preference Aggregation with Incomplete CP-Nets. In 16th International Conference on Principles of Knowledge Representation and Reasoning (KR 2018) (pp. 308-317). AAAI Press, Palo Alto, California.
+",
+        "tags": ["algorithms", "implementation"],
+        "category": "BSc",
+        "available": 1
+    },
+
+    {
+        "title": "Cyclic Proofs for Modal Logic with Future Modality",
+        "supervisor": {
+            "name": "Helle Hvid Hansen",
+            "email": "h.h.hansen@rug.nl"
+        },
+        "short_description": "Learn the basics of modal logic, structural proof theory and cyclic proofs. The goal of the project is to implement a cut-elimination procedure for a cyclic proof system for a simple modal fixpoint logic.",
+        "long_description": "
+Modal logic is an extension of propositional logic which can express properties of nondeterministic programs whose behaviour can be viewed as a transition system where states are variable assignments and the transition relation models the execution of instructions. For example, a formula ◊φ says that there is a transition to a state in which formula φ holds, and a formula Fφ says that there is a reachable state in which φ holds. Reachable states (including the current state) are sometimes called future states and we therefore refer to F as the future modality. F is a so-called fixpoint modality since it satisfies the equation Fφ = φ ∨ ◊Fφ (i.e. Fφ holds if and only if φ holds now or there is a transition to a state where Fφ holds).
+
+
+ The paper [1] presents a cyclic proof system GKe (with a cut-rule) for the modal logic with ◊ and F, and a cut-elimination procedure for this system. Cyclic proof systems are a form of sequent calculi that are particularly suited for logics with fixpoint modalities. Cyclic proofs have finite representations as labelled trees, but they are viewed as trees with back edges, or in other words, cyclic structures. The cut-rule and the significance of cut-elimination are fundamental to proof theory and its connection to the theory of computation, see e.g. [2] for a compact introduction. Cut-elimination in cyclic proofs poses added challenges due to the cyclic structure.
+
+
+ The aim of this project will be to implement the cut-elimination procedure for the cyclic proof system GKe, and analyse its complexity. It is part of the project to select a suitable programming language/platform. Options include Rascal [3], the Cyclist prover framework [4], or a high-level language like Haskell. For earlier student projects that used Rascal to implement formal proofs, see [5-6]. To carry out this project, the student would need to study paper [1] in detail and construct cyclic proofs that can be used as input for the cut-elimination procedure. This project is therefore suited for students who have a strong interest in logic.
+
+
+- [1] Bahareh Afshari and Johannes Kloibhofer. Cut elimination for Cyclic Proofs: A Case Study in Temporal Logic. Proceedings of Fixpoints in Computer Science, 2024.
+<https://arxiv.org/abs/2405.01935>
+ 
+- [2] Abhishek De and Iris van der Giessen. Introduction to Proof Theory. Lecture notes for Midlands Graduate School 2024.
+<https://www.irif.fr/_media/users/ade/intro-prf-theory.pdf>
+ 
+- [3] Paul Klint, Tijs van der Storm, and Jurgen Vinju. Rascal: A domain specific language for source code analysis and manipulation. Ninth IEEE International Working Conference on Source Code Analysis and Manipulation, 2009.
+<https://doi.org/10.1109/SCAM.2009.28>, 
+<https://www.rascal-mpl.org/>
+ 
+- [4] James Brotherston, Nikos Gorogiannis and Rasmus L. Petersen. A Generic Cyclic Theorem Prover. Proceedings of APLAS 2012.
+<https://link.springer.com/chapter/10.1007/978-3-642-35182-2_25>
+Also available here: <http://www0.cs.ucl.ac.uk/staff/J.Brotherston/APLAS12/cyclist.pdf>,
+<https://www.cyclist-prover.org/>
+ 
+- [5] Chris Worthington. Proof Transformations for Game Logic. BSc thesis, Computing Science, UG, 2021.
+<https://fse.studenttheses.ub.rug.nl/25673/>
+ 
+- [6] Steven J. van Schagen. Game Logic: A Proof Transformation from Gentzen to Hilbert. BSc Thesis, Computing Science, UG, 2022.
+<https://fse.studenttheses.ub.rug.nl/28264/>
+
+",
+        "tags": ["logic", "implementation", "algorithms"],
+        "category": "BSc",
+        "available": 1
+    },
+
 ]
