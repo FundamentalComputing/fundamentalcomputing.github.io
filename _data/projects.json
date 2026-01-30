@@ -251,7 +251,7 @@ Additional reading:
 ",
         "tags": ["type theory", "programming languages"],
         "category": "BSc",
-        "available": 1
+        "available": 0
     },
 
     {
@@ -310,7 +310,7 @@ Here are some more links that contextualize the project:
 ",
         "tags": ["logic", "functional programming", "formal verification"],
         "category": "BSc",
-        "available": 2
+        "available": 1
     },
 
 
@@ -348,7 +348,7 @@ Some relevant reading:
 ",
         "tags": ["type theory", "functional programming"],
         "category": "BSc",
-        "available": 1
+        "available": 0
     },
 
     {
