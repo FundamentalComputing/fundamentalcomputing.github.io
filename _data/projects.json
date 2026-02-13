@@ -594,13 +594,13 @@ References:
 
 - [1] I. Scarabottolo, G. Ansaloni, G. Constantinides, L. Pozzi, and S. Reda. Approximate Logic Synthesis: A Survey. Proceedings of the IEEE (Proc. IEEE), volume 108, issue 12, 2020. DOI: <https://doi.org/10.1109/JPROC.2020.3014430>
 
-- [2] M. Rezaalipour, M. Biasion, F. Costa, C. Tirelli, F. Ferretti, R. Otoni, G. Constantinides, and L. Pozzi. Approximate Logic Synthesis via Iterative SMT-based Subcircuit Rewriting. IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD), Early Access, 2025. DOI: <https://doi.org/10.1109/TCAD.2025.3638267>
+- [2] M. Rezaalipour, M. Biasion, F. Costa, C. Tirelli, L. Ferretti, R. Otoni, G. Constantinides, and L. Pozzi. Approximate Logic Synthesis via Iterative SMT-based Subcircuit Rewriting. IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD), Early Access, 2025. DOI: <https://doi.org/10.1109/TCAD.2025.3638267>
 
 - [3] C. Barrett, C. Tinelli, H. Barbosa, A. Niemetz, M. Preiner, A. Reynolds, and Y. Zohar. Satisfiability Modulo Theories: A Beginner's Tutorial. Proceedings of the 26th International Symposium on Formal Methods (FM'24), 2024. DOI: <https://doi.org/10.1007/978-3-031-71177-0_31>
 ",
         "tags": ["logic", "synthesis", "implementation"],
         "category": "BSc",
-        "available": 2
+        "available": 0
     },
 
     {
